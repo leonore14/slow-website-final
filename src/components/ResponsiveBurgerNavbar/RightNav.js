@@ -13,14 +13,14 @@ const Ul = styled.ul`
     flex-flow: column nowrap;
     list-style: none;
     text-decoration: none;
-    background-color: #FFFFF;
+    background-color: #FFFFFF;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
     height: 100vh;
-    width: 200px;
-    padding-top: 3.5rem;
+    width: 28%;
+    padding-top: 5rem;
     transition: transform 0.3s ease-in-out;
 
     li {
@@ -28,12 +28,15 @@ const Ul = styled.ul`
     }
 
     li{
-      padding: 18px 10px;
+      padding: 10px 10px;
+      text-align: right;
+      margin-right : 11%;
     }
   
     li a{
       text-decoration: none;
       color: black;
+
     }
   
     li .active{
@@ -44,7 +47,12 @@ const Ul = styled.ul`
   
 `;
 
+
+
+
+
 const RightNav = ({ open }) => {
+
     return(
             <Ul open={open}>    
                     <li>
