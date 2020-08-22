@@ -1,0 +1,66 @@
+import React from 'react';
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
+
+
+const Ul = styled.ul`
+
+  z-index: 3;
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style: none;
+    text-decoration: none;
+    background-color: #FFFFF;
+    position: fixed;
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    padding-top: 3.5rem;
+    transition: transform 0.3s ease-in-out;
+
+    li {
+      color: #fff;
+    }
+
+    li{
+      padding: 18px 10px;
+    }
+  
+    li a{
+      text-decoration: none;
+      color: black;
+    }
+  
+    li .active{
+      font-weight: 450;
+    }
+
+  }
+  
+`;
+
+const RightNav = ({ open }) => {
+    return(
+            <Ul open={open}>    
+                    <li>
+                        <NavLink exact to='/' activeClassName='active' className="rightNavHome" >Home</NavLink>
+                    </li>        
+                    <li>
+                        <NavLink to='/projects' activeClassName='active' className="rightNavProjects" >Projects</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/about' activeClassName='active' className="rightNavAbout" >About</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/contact' activeClassName='active' className="rightNavContact" >Contact</NavLink>
+                    </li>
+            </Ul>
+    )
+}
+
+export default RightNav ;

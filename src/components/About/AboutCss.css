@@ -1,0 +1,82 @@
+
+{/* ABOUT PAGE */}
+
+.about{
+    margin-left: 10%;
+  }
+  
+  .theStudioTitle{
+    margin-top:15%;
+    margin-bottom: 2%;
+  }
+  
+  .theStudioText{
+    margin-left: 3%;
+    margin-right: 45%;
+  }
+  
+  .theVibesTitle{
+    margin-top:8%;
+    margin-bottom: 2%;
+  }
+  
+  .theVibesText{
+    margin-left: 3%;
+    margin-right: 45%;
+  }
+  
+  .ourTeamTitle{
+    margin-top:8%;
+    margin-bottom: 2%;
+  }
+  
+  .ourTeamPhotos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+  }
+  
+  .leonore{
+    margin-right: 5%;
+  }
+  
+  .leonore img{
+    margin-bottom: 5%;
+  }
+  
+  .damien{
+    margin-right: 5%;
+  }
+  
+  .damien img{
+    margin-bottom: 5%;
+  }
+  
+  .leonoreText{
+    font-size: small;
+  }
+  
+  .damienText{
+    font-size: small;
+  }
+
+
+
+{/* RESPONSIVENESS */}
+
+
+@media screen and (max-width: 575px){
+
+    .ourTeamPhotos{
+      flex-direction: column;
+    }
+  
+    .damien{
+      margin-top: 8%;
+      margin-bottom:8%;
+    }
+  
+  }
+  

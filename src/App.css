@@ -1,38 +1,149 @@
-.App {
+{/* GENERAL CSS */}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family: 'Basis+Grotesque+Pro', sans-serif ;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.appDiv{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+{/* NAVBAR CSS */}
+.navbar{
+  font-size: small;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-top: 1.5%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.navbar ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .active{
+  font-weight: 450;
+}
+
+.navbarLogo{
+  align-self: flex-start;
+}
+
+.navbarLogoImg{
+  width:50%;
+  justify-self: flex-start;
+}
+
+.navbarList{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 7%;
+  margin-left: auto;
+}
+
+.navbarList li{
+  margin: 15%;
+}
+
+
+
+{/* NAVBAR RESPONSIVENESS */}
+
+
+@media screen and (max-width: 768px){
+
+  .navbarList{
+    display: none;
+  }
+
+}
+
+
+
+
+{/* FOOTER */}
+.footer{
+  font-size: x-small;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.footer ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer li{
+  margin: 5%;
+  margin-bottom: 4%;
+}
+
+.footer a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+{/* PROJECTS PAGE */}
+.projects{
+  margin-top:17%;
+  margin-bottom:17%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+{/* COPYRIGHT PAGE */}
+.copyright{
+  margin-top:17%;
+  margin-bottom:17%;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+{/* GENERAL TERMS PAGE */}
+.generalTerms{
+  margin-top:17%;
+  margin-bottom:17%;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+{/* PERSONAL DATA PAGE */}
+.personalData{
+  margin-top:17%;
+  margin-bottom:17%;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+{/* RESPONSIVENESS */}
+
+
+
