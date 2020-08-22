@@ -37,6 +37,10 @@ body {
   width: 100%;
 }
 
+.navbar li:hover{
+  font-weight: 450;
+}
+
 .navbar a{
   text-decoration: none;
   color: black;
