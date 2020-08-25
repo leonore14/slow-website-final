@@ -1,0 +1,51 @@
+.personalData{
+    margin-left: 10%;
+  }
+  
+  .personalDataTitle{
+    margin-top:15%;
+    margin-bottom: 1%;
+    margin-right: 25%;
+  }
+  
+  .personalDataParagraphTitle{
+    margin-top:10%;
+    margin-bottom: 1%;
+    margin-right: 25%;
+  }
+
+  .personalDataParagraphSubTitle{
+    margin-top:7%;
+    margin-bottom: 1%;
+  }
+
+  .personalDataParagraphSubSubTitle{
+    margin-top:3%;
+    margin-bottom: 1%;
+  }
+  
+  .personalDataText{
+    margin-top:2%;
+    margin-left: 3%;
+    margin-right: 45%;
+    text-align: justify;
+  }
+
+  .personalDataTextContactList{
+    margin-bottom: 10%;
+  }
+
+  .personalData ul{
+    margin-left: 5%;
+  }
+
+  .personalData li{
+    margin-top: 2%;
+  }
+
+  .personalDataTextContactList{
+    margin-bottom: 10%;
+  }
+
+
+{/* RESPONSIVENESS */}

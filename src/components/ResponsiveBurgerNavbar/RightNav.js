@@ -51,21 +51,21 @@ const Ul = styled.ul`
 
 
 
-const RightNav = ({ open }) => {
+const RightNav = ({ open, handleClose }) => {
 
     return(
             <Ul open={open}>    
                     <li>
-                        <NavLink exact to='/' activeClassName='active' className="rightNavHome" >Home</NavLink>
+                        <NavLink exact to='/' activeClassName='active' className="rightNavHome" onClick={() => handleClose()}>Home</NavLink>
                     </li>        
                     <li>
-                        <NavLink to='/projects' activeClassName='active' className="rightNavProjects" >Projects</NavLink>
+                        <NavLink to='/projects' activeClassName='active' className="rightNavProjects" onClick={() => handleClose()}>Projects</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/about' activeClassName='active' className="rightNavAbout" >About</NavLink>
+                        <NavLink to='/about' activeClassName='active' className="rightNavAbout" onClick={() => handleClose()}>About</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/contact' activeClassName='active' className="rightNavContact" >Contact</NavLink>
+                        <NavLink to='/contact' activeClassName='active' className="rightNavContact" onClick={() => handleClose()}>Contact</NavLink>
                     </li>
             </Ul>
     )
