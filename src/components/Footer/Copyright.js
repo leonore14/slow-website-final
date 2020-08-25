@@ -4,7 +4,7 @@ import React from 'react';
 const Copyright = () => {
     return(
         <div className="copyright">
-            Copyright © coming soon !
+            Copyright © 2020 Slōw Creative Studio. All rights reserved.
         </div>
     )
     

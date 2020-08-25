@@ -11,7 +11,7 @@ const Footer = () => {
                     <a activeClassName='active' target="blank" href='https://www.instagram.com/slow.creative/'>Instagram</a>
                 </li>
                 <li>
-                    <NavLink activeClassName='active' to='copyright'>Copyright ©</NavLink>
+                    Copyright © 2020 Slōw Creative. All rights reserved
                 </li>
                 <li>
                     <NavLink activeClassName='active' to='generalTerms'>General Terms Of Use</NavLink>
