@@ -11,7 +11,8 @@ import Copyright from './components/Footer/Copyright';
 import GeneralTerms from './components/Footer/GeneralTerms';
 import PersonalData from './components/Footer/PersonalData';
 import Burger from './components/ResponsiveBurgerNavbar/Burger';
-
+import Cetus from './components/Projects/Cetus';
+import Quiksilver from './components/Projects/Quiksilver';
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
         <Route path='/copyright' component={Copyright} />
         <Route path='/generalTerms' component={GeneralTerms} />
         <Route path='/personalData' component={PersonalData} />
+        <Route path='/cetus' component={Cetus} />
+        <Route path='/quiksilver' component={Quiksilver} />
       </Switch>
       <Footer />
     </div>
