@@ -11,6 +11,10 @@
   flex-wrap: wrap;
 }
 
+.oneProject img{
+  object-fit: cover;
+}
+
 .oneProject{
   margin-top:15%;
   margin-bottom: 2%;
