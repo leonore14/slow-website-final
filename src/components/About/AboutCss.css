@@ -1,66 +1,68 @@
 
-{/* ABOUT PAGE */}
+{/* ABOUT PAGE CSS */}
 
 .about{
     margin-left: 10%;
-  }
+}
   
-  .theStudioTitle{
+.theStudioTitle{
     margin-top:15%;
     margin-bottom: 2%;
-  }
+}
   
-  .theStudioText{
+.theStudioText{
     margin-left: 3%;
     margin-right: 45%;
-  }
+    text-align: justify;
+}
   
-  .theVibesTitle{
+.theVibesTitle{
     margin-top:8%;
     margin-bottom: 2%;
-  }
+}
   
-  .theVibesText{
+.theVibesText{
     margin-left: 3%;
     margin-right: 45%;
-  }
+    text-align: justify;
+}
   
-  .ourTeamTitle{
+.ourTeamTitle{
     margin-top:8%;
     margin-bottom: 2%;
-  }
+}
   
-  .ourTeamPhotos{
+.ourTeamPhotos{
     display: flex;
     flex-direction: row;
     margin-top: 3%;
     margin-left: 3%;
     margin-bottom: 2%;
-  }
+}
   
-  .leonore{
+.leonore{
     margin-right: 5%;
-  }
+}
   
-  .leonore img{
+.leonore img{
     margin-bottom: 5%;
-  }
+}
   
-  .damien{
+.damien{
     margin-right: 5%;
-  }
+}
   
-  .damien img{
+.damien img{
     margin-bottom: 5%;
-  }
+}
   
-  .leonoreText{
+.leonoreText{
     font-size: small;
-  }
+}
   
-  .damienText{
+.damienText{
     font-size: small;
-  }
+}
 
 
 
@@ -78,5 +80,5 @@
       margin-bottom:8%;
     }
   
-  }
+}
   

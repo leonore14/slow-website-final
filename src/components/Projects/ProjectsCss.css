@@ -1,0 +1,39 @@
+{/* PROJECTS PAGE CSS */}
+
+.projects{
+  margin-left: 10%;
+}
+
+.oneProjectContainer{
+  display: flex;
+  flex-flow: row;
+  margin-right: 5%;
+  flex-wrap: wrap;
+}
+
+.oneProject{
+  margin-top:15%;
+  margin-bottom: 2%;
+}
+
+.oneProject ul{
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.oneProject a{
+  text-decoration: none;
+  color: black;
+}
+
+.oneProject li{
+  margin-top: 5%;
+}
+
+
+
+  {/* RESPONSIVENESS */}

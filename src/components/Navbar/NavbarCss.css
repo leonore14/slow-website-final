@@ -1,0 +1,64 @@
+{/* NAVBAR CSS */}
+
+.navbar{
+    font-size: small;
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-top: 1.5%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar li:hover{
+    font-weight: 450;
+  }
+  
+  .navbar a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navbar .active{
+    font-weight: 450;
+  }
+  
+  .navbarLogo{
+    align-self: flex-start;
+  }
+  
+  .navbarLogoImg{
+    width:50%;
+    justify-self: flex-start;
+  }
+  
+  .navbarList{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 7%;
+    margin-left: auto;
+  }
+  
+  .navbarList li{
+    margin: 15%;
+  }
+  
+  
+  
+  {/* NAVBAR RESPONSIVENESS */}
+  
+  
+  @media screen and (max-width: 768px){
+  
+    .navbarList{
+      display: none;
+    }
+  
+  }
