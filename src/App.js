@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Projects from './components/Projects';
+import Navbar from './components/Navbar/Navbar';
+import ProjectsPage from './components/Projects/ProjectsPage';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
@@ -20,7 +20,7 @@ function App() {
       <Burger />
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route path='/projects' component={Projects} />
+        <Route path='/projectsPage' component={ProjectsPage} />
         <Route path='/about' component={About} />
         <Route path='/contact' component={Contact} />
         <Route path='/copyright' component={Copyright} />

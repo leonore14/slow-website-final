@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import slowCreativeLogo from './images/slow-creative-logo.svg';
+import slowCreativeLogo from '../images/slow-creative-logo.svg';
+import './NavbarCss.css';
 
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
                 </div>
                     <div className="navbarList">
                     <li>
-                        <NavLink to='/projects' activeClassName='active' className="navbarProjects" >Projects</NavLink>
+                        <NavLink to='/projectsPage' activeClassName='active' className="navbarProjectsPage" >Projects</NavLink>
                     </li>
                     <li>
                         <NavLink to='/about' activeClassName='active' className="navbarAbout" >About</NavLink>
