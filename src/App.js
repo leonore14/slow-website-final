@@ -14,6 +14,7 @@ import Burger from './components/ResponsiveBurgerNavbar/Burger';
 import Cetus from './components/Projects/Cetus';
 import Quiksilver from './components/Projects/Quiksilver';
 
+
 function App() {
   return (
     <div className="appDiv">
@@ -27,8 +28,8 @@ function App() {
         <Route path='/copyright' component={Copyright} />
         <Route path='/generalTerms' component={GeneralTerms} />
         <Route path='/personalData' component={PersonalData} />
-        <Route path='/cetus' component={Cetus} />
-        <Route path='/quiksilver' component={Quiksilver} />
+        <Route path='/CetusBiarritz.' component={Cetus} />
+        <Route path='/Quiksilver.' component={Quiksilver} />
       </Switch>
       <Footer />
     </div>

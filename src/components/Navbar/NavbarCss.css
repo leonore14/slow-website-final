@@ -1,7 +1,7 @@
 {/* NAVBAR CSS */}
 
 .navbar{
-    font-size: small;
+    font-size: 0.95rem;
     margin-right: 4%;
     margin-left: 4%;
     margin-top: 1.5%;
@@ -17,8 +17,12 @@
     width: 100%;
   }
   
+  .navbar li{
+    transition: 0.2s ease-out;
+  }
+
   .navbar li:hover{
-    font-weight: 450;
+    opacity: 0.4;
   }
   
   .navbar a{
@@ -27,7 +31,7 @@
   }
   
   .navbar .active{
-    font-weight: 450;
+    font-weight: 500;
   }
   
   .navbarLogo{
