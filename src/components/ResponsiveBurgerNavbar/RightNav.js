@@ -59,7 +59,7 @@ const RightNav = ({ open, handleClose }) => {
                         <NavLink exact to='/' activeClassName='active' className="rightNavHome" onClick={() => handleClose()}>Home</NavLink>
                     </li>        
                     <li>
-                        <NavLink to='/projects' activeClassName='active' className="rightNavProjects" onClick={() => handleClose()}>Projects</NavLink>
+                        <NavLink to='/projectsPage' activeClassName='active' className="rightNavProjects" onClick={() => handleClose()}>Projects</NavLink>
                     </li>
                     <li>
                         <NavLink to='/about' activeClassName='active' className="rightNavAbout" onClick={() => handleClose()}>About</NavLink>

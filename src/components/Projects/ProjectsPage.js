@@ -7,9 +7,8 @@ class ProjectsPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          data : null
+          data : []
         };
-        this.getProject = this.getProject.bind(this);
       }
 
     componentDidMount() {
@@ -17,25 +16,29 @@ class ProjectsPage extends Component {
     }
 
     getProject = () => {
-        fetch (`https://guarded-peak-00357.herokuapp.com/projects`)
+        fetch (`https://enigmatic-forest-39099.herokuapp.com/projects`)
         .then(response => response.json())
         .then(data => {
-            this.setState({
-                image1 : data[0].ProjectImage1,
-                name : data[0].ProjectName,
-                shortDescription : data[0].ProjectShortDescription,  
-        }
-        )}
-        )
+            this.setState({data})
+        })
     }
     
 
     render() {
 
         return(
+            <>
             <div className="projects">
-                <OneProject image1={this.state.image1} name={this.state.name} shortDescription={this.state.shortDescription} />
+                {this.state.data.map(project => 
+                    <OneProject
+                        image1={project.ProjectImage1.formats.small.url} 
+                        name={project.ProjectName} 
+                        shortDescription={project.ProjectShortDescription} 
+                    />
+                )}
             </div>
+            </>
+            
         )
     
     }
