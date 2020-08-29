@@ -6,6 +6,13 @@ import './AboutCss.css';
 
 const About = () => {
     return(
+
+        <>
+
+        <div className='aboutTopPage'>   
+        </div>
+
+
         <div className="about">
          
 
@@ -61,6 +68,11 @@ const About = () => {
             </div>
 
         </div>
+
+        <div className='aboutBottomPage'>
+        </div>
+
+        </>
     )
     
 }

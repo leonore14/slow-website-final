@@ -28,14 +28,20 @@ class ProjectsPage extends Component {
 
         return(
             <>
+            <div className='oneProjectTopPage'>   
+            </div>
+
             <div className="projects">
                 {this.state.data.map(project => 
                     <OneProject
-                        image1={project.ProjectImage1.formats.small.url} 
+                        image1={project.ProjectImage1.url} 
                         name={project.ProjectName} 
                         shortDescription={project.ProjectShortDescription} 
                     />
                 )}
+            </div>
+
+            <div className='oneProjectBottomPage'>
             </div>
             </>
             
