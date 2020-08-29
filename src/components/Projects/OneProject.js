@@ -4,6 +4,8 @@ import "./ProjectsCss.css";
 
 const OneProject = ({ image1, name, shortDescription }) => {
   return (
+    <>
+
     <div className="oneProjectContainer">
 
         <div className="oneProject">
@@ -22,6 +24,8 @@ const OneProject = ({ image1, name, shortDescription }) => {
         </div>
       
     </div>
+
+    </>
   );
 };
 

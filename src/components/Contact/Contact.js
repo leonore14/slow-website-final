@@ -18,6 +18,11 @@ class Contact extends React.Component {
     
     return (
 
+        <>
+
+        <div className='contactTopPage'>   
+        </div>
+
         <div className="contact">
             
             <div>
@@ -77,6 +82,12 @@ class Contact extends React.Component {
                 </div>
             </div>
         </div>
+
+        <div className='contactBottomPage'>
+        </div>
+
+        </>
+
         )
     }
 

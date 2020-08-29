@@ -4,8 +4,16 @@
     margin-left: 10%;
 }
 
+.contactTopPage{
+  height: 18vh;
+}
+
+.contactBottomPage{
+  height: 14vh;
+}
+
 .contactProject{
-  margin-top:15%;
+  margin-top:5%;
   margin-bottom: 2%;
 }
 
@@ -98,7 +106,7 @@
   margin-top: 3%;
   margin-left: 3%;
   margin-right: 20%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 
 .contactSlowStudioText{

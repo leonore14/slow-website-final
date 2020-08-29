@@ -4,20 +4,27 @@
   margin-left: 10%;
 }
 
+.oneProjectTopPage{
+  height: 18vh;
+}
+
+.oneProjectBottomPage{
+  height: 14vh;
+}
+
 .oneProjectContainer{
   display: flex;
   flex-flow: row;
-  margin-right: 5%;
-  flex-wrap: wrap;
-}
-
-.oneProject img{
-  object-fit: cover;
+  width: 57%;
 }
 
 .oneProject{
-  margin-top:15%;
-  margin-bottom: 2%;
+  margin-top:10%;
+  margin-bottom: 5%;
+}
+
+.oneProject img{
+  width: 100%;
 }
 
 .oneProject ul{
@@ -26,7 +33,7 @@
   flex-flow: column;
   align-items: left;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 1%;
 }
 
 .oneProject a{
@@ -35,9 +42,8 @@
 }
 
 .oneProject li{
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 
-
-  {/* RESPONSIVENESS */}
+{/* RESPONSIVENESS */}
