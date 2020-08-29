@@ -6,7 +6,6 @@ import ProjectsPage from './components/Projects/ProjectsPage';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
 import Copyright from './components/Footer/Copyright';
 import GeneralTerms from './components/Footer/GeneralTerms';
 import PersonalData from './components/Footer/PersonalData';
@@ -17,6 +16,7 @@ import Quiksilver from './components/Projects/Quiksilver';
 
 function App() {
   return (
+    <>
     <div className="appDiv">
       <Navbar />
       <Burger />
@@ -31,8 +31,8 @@ function App() {
         <Route path='/CetusBiarritz.' component={Cetus} />
         <Route path='/Quiksilver.' component={Quiksilver} />
       </Switch>
-      <Footer />
     </div>
+    </>
   );
 }
 

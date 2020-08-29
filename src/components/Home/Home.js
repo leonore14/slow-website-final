@@ -19,8 +19,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
-        
+      <React.Fragment>    
         <ReactPageScroller pageOnChange={this.handlePageChange} >
           <HomeFirstComponent />
           <HomeSecondComponent />

@@ -2,12 +2,15 @@ import React from 'react';
 import leonore from '../images/leonore.jpg';
 import damien from '../images/damien.jpg';
 import './AboutCss.css';
+import Footer from '../Footer/Footer';
+import '../Footer/FooterCss.css';
 
 
 const About = () => {
     return(
 
         <>
+        <div>
 
         <div className='aboutTopPage'>   
         </div>
@@ -71,6 +74,10 @@ const About = () => {
 
         <div className='aboutBottomPage'>
         </div>
+
+        </div>
+
+        <Footer />
 
         </>
     )

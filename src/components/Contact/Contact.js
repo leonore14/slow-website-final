@@ -1,6 +1,8 @@
 import React, { Component} from 'react';
 import funnyslow from '../images/funnyslow.jpg';
 import './ContactCss.css';
+import Footer from '../Footer/Footer';
+import '../Footer/FooterCss.css';
 
 
 class Contact extends React.Component {
@@ -19,6 +21,8 @@ class Contact extends React.Component {
     return (
 
         <>
+
+        <div>
 
         <div className='contactTopPage'>   
         </div>
@@ -86,6 +90,10 @@ class Contact extends React.Component {
         <div className='contactBottomPage'>
         </div>
 
+        </div>
+
+        <Footer />
+        
         </>
 
         )

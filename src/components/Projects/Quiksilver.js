@@ -1,10 +1,12 @@
 import React from "react";
 import "./QuiksilverCss.css";
+import Footer from '../Footer/Footer';
+import '../Footer/FooterCss.css';
 
 const Cetus = () => {
 
     return(
-
+        <>
         <div className="quiksilver">
          
 
@@ -37,6 +39,9 @@ const Cetus = () => {
 
 
         </div>
+
+        <Footer />
+        </>
         
     )
     

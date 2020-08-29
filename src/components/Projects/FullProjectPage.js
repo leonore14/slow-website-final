@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import './ProjectsCss.css';
-import OneProject from './OneProject';
-import Footer from '../Footer/Footer';
-import '../Footer/FooterCss.css';
+import OneFullProject from './OneFullProject';
 
-class ProjectsPage extends Component {
+class FullProjectPage extends Component {
 
     constructor(props) {
         super(props);
@@ -30,29 +28,25 @@ class ProjectsPage extends Component {
 
         return(
             <>
-
-            <div>
-
-            <div className='oneProjectTopPage'>   
+            <div className='oneFullProjectTopPage'>   
             </div>
 
             <div className="projects">
                 {this.state.data.map(project => 
-                    <OneProject
+                    <OneFullProject
                         image1={project.ProjectImage1.url} 
                         name={project.ProjectName} 
-                        shortDescription={project.ProjectShortDescription} 
+                        longDescription={project.ProjectLongDescription} 
+                        image2={project.ProjectImage2.url} 
+                        image3={project.ProjectImage3.url}
+                        image4={project.ProjectImage4.url} 
+                        image5={project.ProjectImage5.url} 
                     />
                 )}
             </div>
 
-            <div className='oneProjectBottomPage'>
+            <div className='oneFullProjectBottomPage'>
             </div>
-
-            </div>
-
-            <Footer />
-
             </>
             
         )
@@ -62,4 +56,4 @@ class ProjectsPage extends Component {
 }
 
 
-export default ProjectsPage ;
+export default FullProjectPage ;
