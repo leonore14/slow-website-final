@@ -4,6 +4,8 @@
     font-size: 0.7rem;
     margin-top: 1%;
     margin-bottom: 1%;
+    height: auto;
+    width: 100vw;
   }
   
   .footer ul{
