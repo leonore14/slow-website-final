@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer';
 const Home = () => (
   <ReactFullpage
     //fullpage options
-    licenseKey = {"E00CFA76-5B724F32-A0B9734D-806D0705"}
+    licenseKey = {process.env.REACT_APP_FULLPAGE_API_KEY}
     scrollingSpeed = {1000} /* Options here */
     
 
