@@ -15,8 +15,8 @@
 .homeText1{
     display: flex;
     flex-direction: row;
-    margin-top: 34%;
-    margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: 5%;
     margin-left: 4%;
     margin-right: 4%;
     width: 100%;
@@ -64,8 +64,8 @@
 .homeText2{
     display: flex;
     flex-direction: row;
-    margin-top: 34%;
-    margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: 5%;
     margin-left: 4%;
     margin-right: 4%;
     width: 100%;
@@ -114,8 +114,8 @@
 .homeText3{
     display: flex;
     flex-direction: row;
-    margin-top: 34%;
-    margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: 5%;
     margin-left: 4%;
     margin-right: 4%;
     width: 100%;
@@ -164,8 +164,8 @@
 .homeText4{
     display: flex;
     flex-direction: row;
-    margin-top: 34%;
-    margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: 5%;
     margin-left: 4%;
     margin-right: 4%;
     width: 100%;
