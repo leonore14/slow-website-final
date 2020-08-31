@@ -9,19 +9,19 @@ const Footer = () => {
         <div className='footer'>
             <ul>
                 <li>
-                    <a activeClassName='active' target="blank" href='https://www.instagram.com/slow.creative/'>Instagram</a>
+                    <a activeclassname='active' target="blank" href='https://www.instagram.com/slow.creative/'>Instagram</a>
                 </li>
                 <li>
                     Copyright © 2020 Slōw Creative. All rights reserved
                 </li>
                 <li>
-                    <NavLink activeClassName='active' to='generalTerms'>General Terms Of Use</NavLink>
+                    <NavLink activeclassname='active' to='generalTerms'>General Terms Of Use</NavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName='active' to='personalData'>Personal Data Policy</NavLink>
+                    <NavLink activeclassname='active' to='personalData'>Personal Data Policy</NavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName='active' to='contact'>Contact</NavLink>
+                    <NavLink activeclassname='active' to='contact'>Contact</NavLink>
                 </li>
             </ul>
         </div>

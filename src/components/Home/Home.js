@@ -1,13 +1,18 @@
-import React from "react";
+import React from 'react';
 import "./HomeCss.css";
 import ReactFullpage from '@fullpage/react-fullpage';
 import Footer from '../Footer/Footer';
+import arrowdown from '../images/slow-creative-arrow-down.svg';
+import arrowup from '../images/slow-creative-arrow-up-wht.svg';
+
 
 const Home = () => (
+
   <ReactFullpage
     //fullpage options
     licenseKey = {process.env.REACT_APP_FULLPAGE_API_KEY}
     scrollingSpeed = {1000} /* Options here */
+
     
 
     render={({ state, fullpageApi }) => {
@@ -30,9 +35,9 @@ const Home = () => (
                   </div>
                 </div>
                 <div className='homeContainerRight1'>
-                  <button className="homeButton1" onClick={() => fullpageApi.moveSectionDown()}>
-                    Click me to move down
-                  </button>
+                  <div className="downArrow" className="bounce" onClick={() => fullpageApi.moveSectionDown()}>
+                    <img alt="" src={arrowdown} className="downArrowStyle" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -52,9 +57,6 @@ const Home = () => (
                   </div>
                 </div>
                 <div className='homeContainerRight2'>
-                  <button className="homeButton2" onClick={() => fullpageApi.moveSectionDown()}>
-                    Click me to move down
-                  </button>
                 </div>
               </div>
             </div>
@@ -74,9 +76,6 @@ const Home = () => (
                   </div>
                 </div>
                 <div className='homeContainerRight3'>
-                  <button className="homeButton3" onClick={() => fullpageApi.moveSectionDown()}>
-                    Click me to move down
-                  </button>
                 </div>
               </div>
             </div>
@@ -89,16 +88,16 @@ const Home = () => (
                 <div className='homeContainerLeft4'>
                 </div>
                 <div className='homeContainerRight4'>
-                  <button className="homeButton4" onClick={() => fullpageApi.moveSectionUp()}>
-                    Click me to move up
-                  </button>
+                  <div className="upArrow" onClick={() => fullpageApi.moveTo(1)}>
+                    <img alt="" src={arrowup} className="upArrowStyle" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           
-          <div class="section fp-auto-height">
+          <div className="section fp-auto-height">
             <Footer />
           </div>
 
