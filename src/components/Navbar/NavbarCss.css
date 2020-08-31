@@ -21,7 +21,7 @@
     transition: 0.2s ease-out;
   }
 
-  .navbar li:hover{
+  .navbar .navbarList li:hover{
     opacity: 0.4;
   }
   
@@ -34,13 +34,18 @@
     font-weight: 500;
   }
   
+  .navbarLogo li:hover{
+    opacity: 0.75;
+  }
+
   .navbarLogo{
-    align-self: flex-start;
+    align-self: center;
   }
   
   .navbarLogoImg{
-    width:50%;
+    width:70%;
     justify-self: flex-start;
+    align-self: center;
   }
   
   .navbarList{
@@ -64,5 +69,11 @@
     .navbarList{
       display: none;
     }
+
+    .navbarLogo{
+      padding-top: 1.5rem;
+    }
   
   }
+
+  

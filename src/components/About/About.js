@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import leonore from '../images/leonore.jpg';
 import damien from '../images/damien.jpg';
 import './AboutCss.css';
@@ -7,9 +7,11 @@ import '../Footer/FooterCss.css';
 
 
 const About = () => {
+
     return(
 
         <>
+
         <div>
 
         <div className='aboutTopPage'>   

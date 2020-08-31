@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import slowCreativeLogo from '../images/slow-creative-logo.svg';
+import slowCreativeTypo from '../images/slow-creative-typo-blk.svg';
 import './NavbarCss.css';
 
 
@@ -10,18 +10,18 @@ const Navbar = () => {
             <ul>
                 <div className="navbarLogo">
                     <li>
-                        <NavLink exact to='/' activeclassName='active' ><img className="navbarLogoImg" src={slowCreativeLogo} alt='slowLogo'></img></NavLink>
+                        <NavLink exact to='/' activeclassname='active' ><img className="navbarLogoImg" src={slowCreativeTypo} alt='slowLogo'></img></NavLink>
                     </li>
                 </div>
                     <div className="navbarList">
                     <li>
-                        <NavLink to='/projectsPage' activeClassName='active' className="navbarProjectsPage" >Projects</NavLink>
+                        <NavLink to='/projectsPage' activeclassname='active' className="navbarProjectsPage" >Projects</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/about' activeClassName='active' className="navbarAbout" >About</NavLink>
+                        <NavLink to='/about' activeclassname='active' className="navbarAbout" >About</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/contact' activeClassName='active' className="navbarContact" >Contact</NavLink>
+                        <NavLink to='/contact' activeclassname='active' className="navbarContact" >Contact</NavLink>
                     </li>
                 </div>
             </ul>

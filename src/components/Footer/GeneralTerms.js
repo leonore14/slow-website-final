@@ -1,9 +1,15 @@
 import React from 'react';
-import './GeneralTermsCss.css'
+import './GeneralTermsCss.css';
+import Footer from './Footer';
+import arrowUpBlack from '../images/slow-creative-arrow-up.svg';
 
+const scrollTop = () =>{
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
 
 const GeneralTerms = () => {
     return(
+        <>
         <div className="generalTerms">
                 <div className="termsTitle">
                     <h1>Terms and Conditions for Slow Creative Studio.</h1>
@@ -198,14 +204,17 @@ const GeneralTerms = () => {
                 </div>
 
 
+                
+                
                 <div className="termsParagraphTitle">
                     <h2>Contact Us</h2>
-                </div>
-                <div className="termsText">
+        </div>
+                <div className="termsTextContact">
+                  <div className='termsContactLeftContainer'>
                     <p>If you have any questions about these Terms and Conditions, You can contact us:</p>
                     <br></br>
                     <ul className="termsTextContactList">
-                    <li>By email: 
+                        <li>By email: 
                             <br></br>
                         contact@slowcreativestudio.com
                         </li>
@@ -220,15 +229,24 @@ const GeneralTerms = () => {
                             +33.6.88.50.93.81
                         </li>
                         <br></br>
-                        <li>By mail:
+                        <li>By mail: 
                             <br></br>
                             48 Avenue du President Kennedy, 64200 Biarritz, France
                         </li>
                     </ul>
+                  </div>
+                  <div className='termsContactRightContainer' onClick={scrollTop}>
+                    <img alt="" src={arrowUpBlack} className="upArrowBlackStyle" />
+                  </div>
+
                 </div>
 
 
         </div>
+
+        <Footer />
+
+        </>
     )
     
 }

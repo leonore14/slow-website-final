@@ -1,9 +1,15 @@
 import React from "react";
-import './PersonalDataCss.css'
+import './PersonalDataCss.css';
+import Footer from './Footer';
+import arrowUpBlack from '../images/slow-creative-arrow-up.svg';
 
+const scrollTop = () =>{
+  window.scrollTo({top: 0, behavior: 'smooth'});
+};
 
 const PersonalData = () => {
   return (
+    <>
     <div className="personalData">
 
       <div className="personalDataTitle">
@@ -744,7 +750,8 @@ const PersonalData = () => {
       <div className="termsParagraphTitle">
                     <h2>Contact Us</h2>
         </div>
-                <div className="personalDataText">
+                <div className="personalDataTextContact">
+                  <div className='contactLeftContainer'>
                     <p>If you have any questions about this Privacy Policy, You can contact us:</p>
                     <br></br>
                     <ul className="personalDataTextContactList">
@@ -768,9 +775,18 @@ const PersonalData = () => {
                             48 Avenue du President Kennedy, 64200 Biarritz, France
                         </li>
                     </ul>
+                  </div>
+                  <div className='contactRightContainer' onClick={scrollTop}>
+                    <img alt="" src={arrowUpBlack} className="upArrowBlackStyle" />
+                  </div>
+
                 </div>
 
     </div>
+
+    <Footer />
+
+    </>
   );
 };
 

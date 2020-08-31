@@ -8,7 +8,7 @@ const OneProject = ({ image1, name, shortDescription }) => {
 
     <div className="oneProjectContainer">
 
-        <div className="oneProject">
+        <div className="oneProject" >
         <a href={"/"+name}>
       
           <img src={image1} alt={name} />

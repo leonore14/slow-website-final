@@ -43,11 +43,34 @@
     margin-left: auto;
 }
 
-.homeButton1{
-    height:10%;
-    width: 100%;
+.downArrow{
     align-self: center;
 }
+
+.bounce {
+	animation-name: bounce;
+    animation-duration: 4s; /* or: Xms */
+    animation-iteration-count: 4;
+    align-self: flex-end;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% { 
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.downArrowStyle{
+    width: 45%;
+}
+
+  
 
 
 .home2{
@@ -92,14 +115,6 @@
     margin-left: auto;
 }
 
-.homeButton2{
-    height:10%;
-    width: 100%;
-    align-self: center;
-}
-
-
-
 .home3{
     background-image: url("../images/homeVinyl.jpg");
     background-size: cover;
@@ -142,13 +157,6 @@
     margin-left: auto;
 }
 
-.homeButton3{
-    height:10%;
-    width: 100%;
-    align-self: center;
-}
-
-
 
 .home4{
     background-image: url("../images/homeHand.jpg");
@@ -184,8 +192,13 @@
     margin-left: auto;
 }
 
-.homeButton4{
-    height:10%;
-    width: 100%;
-    align-self: center;
+.upArrow{
+    justify-content: flex-end;
+    margin-left: auto;
+    align-self: flex-end;
 }
+
+.upArrowStyle{
+    width: 45%;
+}
+
