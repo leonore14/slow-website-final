@@ -5,7 +5,6 @@ import Footer from '../Footer/Footer';
 import arrowdown from '../images/slow-creative-arrow-down.svg';
 import arrowup from '../images/slow-creative-arrow-up-wht.svg';
 
-
 const Home = () => (
 
   <ReactFullpage
@@ -22,7 +21,7 @@ const Home = () => (
 
           <div className="section">
             <div className='home1'>
-              <div className="homeText1">
+              <div className="homeText1" onClick={() => fullpageApi.moveSectionDown()}>
                 <div className='homeContainerLeft1'>
                   <div className="homeTitle1">
                     <h1>Let's</h1>
@@ -35,7 +34,7 @@ const Home = () => (
                   </div>
                 </div>
                 <div className='homeContainerRight1'>
-                  <div className="downArrow" className="bounce" onClick={() => fullpageApi.moveSectionDown()}>
+                  <div className="downArrow" className="bounce">
                     <img alt="" src={arrowdown} className="downArrowStyle" />
                   </div>
                 </div>
@@ -46,7 +45,7 @@ const Home = () => (
 
           <div className="section">
             <div className='home2'>
-              <div className="homeText2">
+              <div className="homeText2" onClick={() => fullpageApi.moveSectionDown()}>
                 <div className='homeContainerLeft2'>
                   <div className="homeTitle2">
                     <h1>Brand Identity</h1>
@@ -65,7 +64,7 @@ const Home = () => (
 
           <div className="section">
             <div className='home3'>
-              <div className="homeText3">
+              <div className="homeText3" onClick={() => fullpageApi.moveSectionDown()}>
                 <div className='homeContainerLeft3'>
                   <div className="homeTitle3">
                     <h1>Digital</h1>

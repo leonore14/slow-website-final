@@ -1,16 +1,18 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from "react-router-dom";
 import slowCreativeTypo from '../images/slow-creative-typo-blk.svg';
 import './NavbarCss.css';
 
 
+
 const Navbar = () => {
+
     return(
-        <div className='navbar'>
+        <div className='navbar' >
             <ul>
                 <div className="navbarLogo">
                     <li>
-                        <NavLink exact to='/' activeclassname='active' ><img className="navbarLogoImg" src={slowCreativeTypo} alt='slowLogo'></img></NavLink>
+                        <Link exact to='/' activeClassName='active' ><img className="navbarLogoImg" src={slowCreativeTypo} alt='slowLogo' ></img></Link>
                     </li>
                 </div>
                     <div className="navbarList">

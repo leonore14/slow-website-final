@@ -1,7 +1,5 @@
 import React from "react";
 import "./ProjectsCss.css";
-import Footer from '../Footer/Footer';
-import '../Footer/FooterCss.css';
 
 
 const OneFullProject = ({ routeProps, projects }) => {
@@ -12,7 +10,6 @@ const OneFullProject = ({ routeProps, projects }) => {
 
 
   return (
-    <>
     
     <div className="oneFullProjectContainer">
 
@@ -45,10 +42,6 @@ const OneFullProject = ({ routeProps, projects }) => {
     }
       
     </div>
-
-    <Footer />
-
-    </>
 
   )
 };
