@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './ProjectsCss.css';
-import OneFullProject from './OneFullProject';
+import OneFullProject from '../OneFullProject';
+
+
 
 class FullProjectPage extends Component {
 

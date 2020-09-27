@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import funnyslow from '../images/funnyslow.jpg';
+import funnyslow from '../images/slow-smile-animated.gif';
 import './ContactCss.css';
 import Footer from '../Footer/Footer';
 import '../Footer/FooterCss.css';

@@ -1,7 +1,7 @@
-{/* QUIKSILVER PAGE */}
+{/* CETUS PAGE */}
 
-.quiksilverDiv1{
-    background-image: url("../images/quiksilver1.jpg");
+.cetusDiv1{
+    background-image: url("../../images/cetus1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,8 +13,8 @@
     z-index: 0;
 }
 
-.quiksilverDiv2{
-    background-color: white;
+.cetusDiv2{
+    background-color: #191919;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,23 +27,24 @@
     justify-content: center;
 }
 
-.quiksilverText{
+.cetusText{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-self: center;
+    color: white;
     font-size: 1.2em;
 }
 
-.quiksilverDash {
+.cetusDash {
     width: 5%;
     margin-top: 2%;
-    border-bottom: solid black 2.5px;
+    border-bottom: solid white 2.5px;
     align-self: center;
 }
 
-.quiksilverDiv3{
-    background-image: url("../images/quiksilver3.jpg");
+.cetusDiv3{
+    background-image: url("../../images/cetus3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,8 +56,8 @@
     z-index: 0;
 }
 
-.quiksilverDiv4{
-    background-image: url("../images/quiksilver4.jpg");
+.cetusDiv4{
+    background-image: url("../../images/cetus4.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,8 +69,21 @@
     z-index: 0;
 }
 
-.quiksilverDiv5{
-    background-image: url("../images/quiksilver5.jpg");
+.cetusDiv5{
+    background-image: url("../../images/cetus5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    z-index: 0;
+}
+
+.cetusDiv6{
+    background-image: url("../../images/cetus6.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

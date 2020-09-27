@@ -1,32 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './ProjectsCss.css';
 import OneProject from './OneProject';
 import Footer from '../Footer/Footer';
 import '../Footer/FooterCss.css';
+import { Link } from 'react-router-dom';
 
-class ProjectsPage extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-          data : []
-        };
-      }
 
-    componentDidMount() {
-        this.getProject();
-    }
-
-    getProject = () => {
-        fetch (`https://enigmatic-forest-39099.herokuapp.com/projects`)
-        .then(response => response.json())
-        .then(data => {
-            this.setState({data})
-        })
-    }
-    
-
-    render() {
+const ProjectsPage = ({ projects }) => {
 
         return(
             <>
@@ -36,13 +17,17 @@ class ProjectsPage extends Component {
             <div className='oneProjectTopPage'>   
             </div>
 
+            <div className="ProjectTitle">
+                    <h2>DiscoverOurProjects.</h2>
+            </div>
+
             <div className="projects">
-                {this.state.data.map(project => 
-                    <OneProject
-                        image1={project.ProjectImage1.url} 
-                        name={project.ProjectName} 
-                        shortDescription={project.ProjectShortDescription} 
+                {projects.map(project => 
+                    <Link to={`/project/${project.id}`}>
+                        <OneProject 
+                        projectInfo={project}
                     />
+                    </Link>
                 )}
             </div>
 
@@ -57,8 +42,6 @@ class ProjectsPage extends Component {
             
         )
     
-    }
-
 }
 
 

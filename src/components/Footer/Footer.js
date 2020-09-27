@@ -12,7 +12,7 @@ const Footer = () => {
                     <a activeclassname='active' target="blank" href='https://www.instagram.com/slow.creative/'>Instagram</a>
                 </li>
                 <li>
-                    Copyright © 2020 Slōw Creative. All rights reserved
+                    © 2020 Slōw Creative. All rights reserved
                 </li>
                 <li>
                     <NavLink activeclassname='active' to='generalTerms'>General Terms Of Use</NavLink>

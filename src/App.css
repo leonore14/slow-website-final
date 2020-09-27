@@ -13,11 +13,13 @@ body {
   text-decoration: none;
 }
 
+
 .appDiv{
   display: flex;
   flex-direction: column;
   position: relative;
 }
+
 
 
 {/* COPYRIGHT PAGE */}

@@ -2,25 +2,22 @@ import React from "react";
 import "./ProjectsCss.css";
 
 
-const OneProject = ({ image1, name, shortDescription }) => {
+const OneProject = ({ projectInfo }) => {
   return (
     <>
-
+    
     <div className="oneProjectContainer">
 
         <div className="oneProject" >
-        <a href={"/"+name}>
-      
-          <img src={image1} alt={name} />
+           <img src={projectInfo.ProjectImage1.url} alt={projectInfo.ProjectName} />
           <ul>
            <li>
-              <strong>{name} </strong>
+              <p><strong>{projectInfo.ProjectName} </strong></p>
             </li>
             <li>
-              <p>{shortDescription} </p>
+              <p>{projectInfo.ProjectShortDescription} </p>
             </li>
           </ul>
-        </a>
         </div>
       
     </div>

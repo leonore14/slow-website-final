@@ -1,7 +1,7 @@
 import React from "react";
 import "./CetusCss.css";
-import Footer from '../Footer/Footer';
-import '../Footer/FooterCss.css';
+import Footer from '../../Footer/Footer';
+import '../../Footer/FooterCss.css';
 
 const Cetus = () => {
 
