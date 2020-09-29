@@ -1,0 +1,53 @@
+{/* FULL PAGE BURGER CSS */}
+
+
+.fullPageBurgerNav{
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-top: 1.5%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.fullPageBurgerNav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+.fullPageBurgerNav a{
+    text-decoration: none;
+    color: black;
+  }
+
+.navbarLogo li:hover{
+    opacity: 0.75;
+  }
+
+.navbarLogo{
+    align-self: center;
+    padding-top: 1.5rem;
+}
+  
+.navbarLogoImg{
+    width:70%;
+    justify-self: flex-start;
+    align-self: center; 
+}
+
+
+
+{/* FULL PAGE BURGER RESPONSIVENESS */}
+  
+  
+  @media screen and (max-width: 768px){
+  
+
+    .burgerFullPageDashes{
+      display: none;
+    }
+  
+  }
+  

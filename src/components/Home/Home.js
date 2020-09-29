@@ -4,9 +4,12 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Footer from '../Footer/Footer';
 import arrowdown from '../images/slow-creative-arrow-down.svg';
 import arrowup from '../images/slow-creative-arrow-up-wht.svg';
+import Navbar from '../Navbar/Navbar';
+
+
 
 const Home = () => (
-
+ 
   <ReactFullpage
     //fullpage options
     licenseKey = {process.env.REACT_APP_FULLPAGE_API_KEY}
@@ -17,7 +20,12 @@ const Home = () => (
     render={({ state, fullpageApi }) => {
 
       return (
+
+        <>
+
         <ReactFullpage.Wrapper>
+
+          <Navbar />    
 
           <div className="section">
             <div className='home1'>
@@ -34,7 +42,7 @@ const Home = () => (
                   </div>
                 </div>
                 <div className='homeContainerRight1'>
-                  <div className="downArrow" className="bounce">
+                  <div className="downArrow bounce">
                     <img alt="" src={arrowdown} className="downArrowStyle" />
                   </div>
                 </div>
@@ -99,8 +107,11 @@ const Home = () => (
           <div className="section fp-auto-height">
             <Footer />
           </div>
-
+          
         </ReactFullpage.Wrapper>
+
+        </>
+      
       );
     }}
   />

@@ -4,6 +4,8 @@ import Footer from '../Footer/Footer';
 import '../Footer/FooterCss.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import arrowupBlack from '../images/slow-creative-arrow-up.svg';
+import FullPageBurger from '../FullBurger/FullPageBurger';
+
 
 
 const OneFullProject = ({ routeProps, projects }) => (
@@ -23,8 +25,13 @@ const OneFullProject = ({ routeProps, projects }) => (
       return (
         
         <ReactFullpage.Wrapper>
+
           
           <div className="oneFullProjectContainer">
+
+                <div>
+                  <FullPageBurger />
+                </div>
 
                 <div className="section">
                   <img className="oneFullProjectImage1" src={matchProject.ProjectImage1.formats.large.url} alt={matchProject.ProjectName} onClick={() => fullpageApi.moveSectionDown()} />
@@ -33,7 +40,9 @@ const OneFullProject = ({ routeProps, projects }) => (
                 <div className="section">
                   <div className="oneFullProjectLongDescription" onClick={() => fullpageApi.moveSectionDown()}>
                     <div className="oneFullProjectText">
-                      <p>{matchProject.ProjectLongDescription}</p>
+                      <p>{matchProject.ProjectLongDescription1}</p>
+                      <p>{matchProject.ProjectLongDescription2}</p>
+                      <p>{matchProject.ProjectLongDescription3}</p>
                       <div className='oneFullProjectDash'></div>
                     </div>
                   </div>

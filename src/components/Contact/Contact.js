@@ -1,8 +1,10 @@
-import React, { Component} from 'react';
+import React from 'react';
 import funnyslow from '../images/slow-smile-animated.gif';
 import './ContactCss.css';
 import Footer from '../Footer/Footer';
 import '../Footer/FooterCss.css';
+import Navbar from '../Navbar/Navbar';
+
 
 
 class Contact extends React.Component {
@@ -21,6 +23,8 @@ class Contact extends React.Component {
     return (
 
         <>
+
+        <Navbar /> 
 
         <div>
 
@@ -95,6 +99,7 @@ class Contact extends React.Component {
         <Footer />
         
         </>
+        
 
         )
     }
