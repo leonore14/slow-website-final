@@ -4,13 +4,18 @@ import damien from '../images/damien.jpg';
 import './AboutCss.css';
 import Footer from '../Footer/Footer';
 import '../Footer/FooterCss.css';
+import Navbar from '../Navbar/Navbar';
+
 
 
 const About = () => {
 
     return(
 
+     
         <>
+
+        <Navbar /> 
 
         <div>
 
@@ -82,6 +87,7 @@ const About = () => {
         <Footer />
 
         </>
+      
     )
     
 }

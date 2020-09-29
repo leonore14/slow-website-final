@@ -4,13 +4,15 @@ import OneProject from './OneProject';
 import Footer from '../Footer/Footer';
 import '../Footer/FooterCss.css';
 import { Link } from 'react-router-dom';
-
+import FullPageBurger from '../FullBurger/FullPageBurger';
 
 
 const ProjectsPage = ({ projects }) => {
 
         return(
             <>
+
+            <FullPageBurger />
 
             <div>
 
@@ -26,6 +28,7 @@ const ProjectsPage = ({ projects }) => {
                     <Link to={`/project/${project.id}`}>
                         <OneProject 
                         projectInfo={project}
+                        key={project.id}
                     />
                     </Link>
                 )}
