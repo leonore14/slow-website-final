@@ -12,7 +12,7 @@ const FullStyledBurger = styled.div`
     position: fixed;
     top: 5%;
     right: 4%;
-    z-index: 4;
+    z-index: 5;
     display: none;
     
     @media (min-width: 769px) {
@@ -59,21 +59,18 @@ const FullPageBurger = () => {
         <>
         <span className="fullPageBurgerNav">
         <ul>
-            <span className="navbarLogo">
-                    <li>
-                        <Link exact to='/' activeClassName='active' ><img className="navbarLogoImg" src={slowCreativeTypo} alt='slowLogo' ></img></Link>
+                    <li className="navbarLogo">
+                        <Link to='/' className='active' ><img className="navbarLogoImg" src={slowCreativeTypo} alt='slowLogo' ></img></Link>
                     </li>
-            </span>
-
-            <span className="burgerFullPageDashes">
-              <li>
+           
+              <li className="burgerFullPageDashes">
                 <FullStyledBurger open={open} onClick={() => setOpen(!open)}>
                     <div />
                     <div />
                     <div />
                 </FullStyledBurger>
               </li>
-            </span>
+          
         </ul>
         </span>
             <FullPageRightNav open={open} handleClose={handleClose} />

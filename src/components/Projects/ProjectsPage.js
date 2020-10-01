@@ -9,6 +9,7 @@ import FullPageBurger from '../FullBurger/FullPageBurger';
 
 const ProjectsPage = ({ projects }) => {
 
+
         return(
             <>
 
@@ -19,13 +20,17 @@ const ProjectsPage = ({ projects }) => {
             <div className='oneProjectTopPage'>   
             </div>
 
-            <div className="ProjectTitle">
-                    <h2>DiscoverOurProjects.</h2>
+            <div className="projectTitle">
+                    <h5>LIFESTYLE</h5>
+                    <h5>FASHION</h5>
+                    <h5>DESIGN</h5>
+                    <h5>EDITORIAL</h5>
+                    <h5>MUSIC</h5>
             </div>
 
             <div className="projects">
                 {projects.map(project => 
-                    <Link to={`/project/${project.id}`}>
+                    <Link className="oneProjectLink" to={`/project/${project.id}`}>
                         <OneProject 
                         projectInfo={project}
                         key={project.id}

@@ -1,21 +1,27 @@
 {/* PROJECTS PAGE CSS */}
 
-.projects{
-  margin-left: 10%;
-}
-
 .oneProjectTopPage{
   height: 18vh;
 }
 
 .oneProjectBottomPage{
-  height: 14vh;
+  height: 9vh;
 }
 
-.ProjectTitle{
+.projectTitle{
+  display: flex;
+  flex-direction: row;
   margin-top:5%;
-  margin-left: 10%;
+  margin-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
   animation: fadein 2s;
+}
+
+.projectTitle h5{
+  padding : 1%;
+  letter-spacing: 0.1rem;
 }
 
 @keyframes fadein {
@@ -23,25 +29,39 @@
   to   { opacity: 1; }
 }
 
+.projects{
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 {/* ONE PROJECTS PAGE CSS */}
 
-.oneProjectContainer{
-  display: flex;
-  flex-flow: row;
-  margin-left: 3%;
-  margin-right: 45%;
-  text-align: justify;
+
+.oneProjectLink{
+  width: 30%;
+  margin: 1.5%;
+  margin-bottom: 5%;
+  justify-content: center;
 }
 
 .oneProject{
-  margin-top:8%;
-  margin-bottom: 5%;
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+  margin: 0;
+}
+
+.oneProjectText{
+  justify-self: flex-end;
 }
 
 .oneProject img{
   width: 100%;
+  height: 225px;
+  object-fit: cover;
   animation: fadein 2s;
 }
 
@@ -50,27 +70,74 @@
   to   { opacity: 1; }
 }
 
-.oneProject ul{
-  list-style: none;
-  display: flex;
-  flex-flow: column;
-  align-items: left;
-  width: 100%;
-  margin-top: 1%;
+.oneProjectImage{
+  position:relative;
+  padding:0;
+  width:100%;
+  display:block;
+  cursor:pointer;
+  overflow:hidden;
 }
 
-.oneProject li{
+.content {
+  opacity:0;
+  font-size: 20px;
+  position:absolute;
+  top:0;
+  left:0;
+  background-color:rgba(255, 255, 255, 0.7);
+  width:100%;
+  height:300px;
+  -webkit-transition: all 1000ms ease-out;
+  -moz-transition: all 1000ms ease-out;
+  -o-transition: all 1000ms ease-out;
+  -ms-transition: all 1000ms ease-out;
+  transition: all 1000ms ease-out;
+  text-align:center;
+}
+  
+.oneProjectImage .content:hover { 
+  opacity:1; 
+}      
+  
+.oneProjectImage .content .oneProjImgHover2 {
+  height:0;
+  opacity:1;
+  transition-delay: 0.2s;
+  transition-duration: 0.8s;
+}
+.oneProjectImage .content:hover .oneProjImgHover2 {
+  opacity:1;
+  transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+}
+
+.oneProject p{
   margin-top: 2%;
   color: black;
-  text-decoration: none;
 }
 
 a{
   text-decoration: none;
 }
 
-.oneProject a{
-  text-decoration: none;
+
+{/* RESPONSIVENESS */}
+
+
+@media screen and (max-width: 575px){
+
+  .projects{
+    flex-direction: column;
+  }
+
+  .oneProjectLink{
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6% ;
+  }
+
 }
 
 
@@ -162,6 +229,7 @@ a{
   z-index: 0;
 }
 
+
 .upArrow{
   justify-content: flex-end;
   margin-left: auto;
@@ -175,6 +243,7 @@ a{
 .upArrowStyle{
   width: 45%;
 }
+
 
 
 {/* RESPONSIVENESS */}

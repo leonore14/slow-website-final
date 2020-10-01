@@ -12,7 +12,7 @@ const Navbar = () => {
             <ul>
                 <div className="navbarLogo">
                     <li>
-                        <Link exact to='/' activeClassName='active' ><img className="navbarLogoImg" src={slowCreativeTypo} alt='slowLogo' ></img></Link>
+                        <Link to='/' className='active' ><img className="navbarLogoImg" src={slowCreativeTypo} alt='slowLogo' ></img></Link>
                     </li>
                 </div>
                     <div className="navbarList">

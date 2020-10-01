@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const Ul = styled.ul`
 
-  z-index: 3;
+  z-index: 4;
   display: none;
 
   @media (max-width: 768px) {
