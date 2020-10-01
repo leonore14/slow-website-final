@@ -6,22 +6,20 @@ const OneProject = ({ projectInfo }) => {
   return (
     <>
     
-    <div className="oneProjectContainer">
 
         <div className="oneProject" >
-           <img src={projectInfo.ProjectImage1.url} alt={projectInfo.ProjectName} />
-          <ul>
-           <li>
+            <div className="oneProjectImage">
+              <img className="oneProjImgHover" src={projectInfo.ProjectImage1.url} alt={projectInfo.ProjectName} />
+              <div className="content">
+                <p className="oneProjImgHover2">{projectInfo.ProjectShortDescription} </p>
+              </div>
+            </div>
+            <div className="oneProjectText">
               <p><strong>{projectInfo.ProjectName} </strong></p>
-            </li>
-            <li>
               <p>{projectInfo.ProjectShortDescription} </p>
-            </li>
-          </ul>
+            </div>
         </div>
-      
-    </div>
-
+    
     </>
   );
 };

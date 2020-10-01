@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
-import ProjectsPage from './components/Projects/ProjectsPage';
-import Home from './components/Home/Home';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import Copyright from './components/Footer/Copyright';
-import GeneralTerms from './components/Footer/GeneralTerms';
-import PersonalData from './components/Footer/PersonalData';
-import Burger from './components/ResponsiveBurgerNavbar/Burger';
-import OneFullProject from './components/Projects/OneFullProject';
-import Cetus from './components/Projects/notUsed/Cetus';
-import Quiksilver from './components/Projects/notUsed/Quiksilver';
+import ProjectsPage from '../Projects/ProjectsPage';
+import Home from '../Home/Home';
+import About from '../About/About';
+import Contact from '../Contact/Contact';
+import Copyright from '../Footer/Copyright';
+import GeneralTerms from '../Footer/GeneralTerms';
+import PersonalData from '../Footer/PersonalData';
+import Burger from '../ResponsiveBurgerNavbar/Burger';
+import OneFullProject from '../Projects/OneFullProject';
+import Cetus from '../Projects/notUsed/Cetus';
+import Quiksilver from '../Projects/notUsed/Quiksilver';
 import ScrollToTop from 'react-router-scroll-top'
 
 
@@ -40,7 +40,7 @@ class App extends Component {
 
   render(){
     const { projects } = this.state ;
-    
+
 
   return (
     <>

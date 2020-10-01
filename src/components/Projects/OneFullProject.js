@@ -14,6 +14,7 @@ const OneFullProject = ({ routeProps, projects }) => (
 
     licenseKey = {process.env.REACT_APP_FULLPAGE_API_KEY}
     scrollingSpeed = {1000} /* Options here */
+    
 
   
     render={({ state, fullpageApi }) => {
@@ -63,7 +64,11 @@ const OneFullProject = ({ routeProps, projects }) => (
                 <div className="section">
                   <div className="bottomOneFullPageContainer">
                     <div className="imageContainer">
-                      <img className="oneFullProjectImage5" src={matchProject.ProjectImage5.formats.large.url} alt={matchProject.ProjectName} onClick={() => fullpageApi.moveSectionUp()} />
+                      <img 
+                        className="oneFullProjectImage5" 
+                        src={matchProject.ProjectImage5.formats.large.url} 
+                        alt={matchProject.ProjectName} 
+                        onClick={() => fullpageApi.moveSectionUp()} />
                     </div>
                     <div className="upArrow" onClick={() => fullpageApi.moveTo(1)}>
                       <img alt="" src={arrowupBlack} className="upArrowStyle" />

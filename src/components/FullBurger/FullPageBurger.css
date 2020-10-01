@@ -7,24 +7,23 @@
     margin-top: 1.5%;
     width: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
 .fullPageBurgerNav ul{
     list-style: none;
     display: flex;
     align-items: center;
-    width: 100%;
-  }
+}
 
 .fullPageBurgerNav a{
     text-decoration: none;
     color: black;
-  }
+}
 
 .navbarLogo li:hover{
     opacity: 0.75;
-  }
+}
 
 .navbarLogo{
     align-self: center;
@@ -36,7 +35,6 @@
     justify-self: flex-start;
     align-self: center; 
 }
-
 
 
 {/* FULL PAGE BURGER RESPONSIVENESS */}
