@@ -58,7 +58,7 @@ class App extends Component {
         <Route path='/personalData' component={PersonalData} />
         <Route path='/CetusBiarritz.' component={Cetus} />
         <Route path='/Quiksilver.' component={Quiksilver} />
-        <Route path='/project/:id' render={(routeProps) => <OneFullProject routeProps={routeProps} projects={projects} />} />
+        <Route path='/project/:id' render={(routeProps) => projects.length > 0 && <OneFullProject routeProps={routeProps} projects={projects} />} />
       </Switch>
 
       <ScrollToTop/>

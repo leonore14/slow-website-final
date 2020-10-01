@@ -4,16 +4,21 @@ import OneProject from './OneProject';
 import Footer from '../Footer/Footer';
 import '../Footer/FooterCss.css';
 import { Link } from 'react-router-dom';
-import FullPageBurger from '../FullBurger/FullPageBurger';
+import NavProjects from '../testNewNavProjects/NavProjects';
 
 
 const ProjectsPage = ({ projects }) => {
 
+    const sortedProjects = projects.sort((a, b) => {
+        return a.id - b.id
+    })
 
         return(
             <>
 
-            <FullPageBurger />
+            <div className="projectsFadeIn">
+
+            <NavProjects />
 
             <div>
 
@@ -29,11 +34,10 @@ const ProjectsPage = ({ projects }) => {
             </div>
 
             <div className="projects">
-                {projects.map(project => 
-                    <Link className="oneProjectLink" to={`/project/${project.id}`}>
+                {sortedProjects.map(project => 
+                    <Link className="oneProjectLink" to={`/project/${project.id}`} key={project.id} >
                         <OneProject 
                         projectInfo={project}
-                        key={project.id}
                     />
                     </Link>
                 )}
@@ -46,6 +50,7 @@ const ProjectsPage = ({ projects }) => {
 
             <Footer />
 
+            </div>
             </>
             
         )

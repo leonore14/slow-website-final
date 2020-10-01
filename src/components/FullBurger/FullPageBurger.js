@@ -7,27 +7,9 @@ import './FullPageBurger.css';
 
 
 const FullStyledBurger = styled.div`
-    width: 2rem;
-    height: 2rem;
-    position: fixed;
-    top: 5%;
-    right: 4%;
-    z-index: 5;
-    display: none;
-    
-    @media (min-width: 769px) {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-    }
   
     div {
-      width: 2rem;
-      height: 0.15rem;
       background-color: ${({ open }) => open ? 'black' : 'black'};
-      border-radius: 10px;
-      transform-origin: 1px;
-      transition: all 0.3s linear;
     
       &:nth-child(1) {
         transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
@@ -46,7 +28,6 @@ const FullStyledBurger = styled.div`
 `; 
 
 
-
 const FullPageBurger = () => {
 
     const [open, setOpen] = useState(false)
@@ -57,14 +38,15 @@ const FullPageBurger = () => {
 
     return(
         <>
+        
         <span className="fullPageBurgerNav">
         <ul>
-                    <li className="navbarLogo">
+              <li className="navbarLogo">
                         <Link to='/' className='active' ><img className="navbarLogoImg" src={slowCreativeTypo} alt='slowLogo' ></img></Link>
-                    </li>
+              </li>
            
-              <li className="burgerFullPageDashes">
-                <FullStyledBurger open={open} onClick={() => setOpen(!open)}>
+              <li className="burgerFullPageDashesContainer">
+                <FullStyledBurger  className="burgerFullPageDashes" open={open} onClick={() => setOpen(!open)}>
                     <div />
                     <div />
                     <div />
@@ -73,7 +55,9 @@ const FullPageBurger = () => {
           
         </ul>
         </span>
-            <FullPageRightNav open={open} handleClose={handleClose} />
+        
+        <FullPageRightNav open={open} handleClose={handleClose} />
+        
         </>
     )
 }

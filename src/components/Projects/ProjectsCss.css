@@ -1,7 +1,16 @@
 {/* PROJECTS PAGE CSS */}
 
+.projectsFadeIn{
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 .oneProjectTopPage{
-  height: 18vh;
+  height: 16vh;
 }
 
 .oneProjectBottomPage{
@@ -16,17 +25,11 @@
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-  animation: fadein 2s;
 }
 
 .projectTitle h5{
   padding : 1%;
   letter-spacing: 0.1rem;
-}
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
 }
 
 .projects{
@@ -43,7 +46,7 @@
 .oneProjectLink{
   width: 30%;
   margin: 1.5%;
-  margin-bottom: 5%;
+  margin-bottom: 4%;
   justify-content: center;
 }
 
@@ -60,14 +63,8 @@
 
 .oneProject img{
   width: 100%;
-  height: 225px;
+  height: 275px;
   object-fit: cover;
-  animation: fadein 2s;
-}
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
 }
 
 .oneProjectImage{
@@ -88,28 +85,21 @@
   background-color:rgba(255, 255, 255, 0.7);
   width:100%;
   height:300px;
-  -webkit-transition: all 1000ms ease-out;
-  -moz-transition: all 1000ms ease-out;
-  -o-transition: all 1000ms ease-out;
-  -ms-transition: all 1000ms ease-out;
-  transition: all 1000ms ease-out;
   text-align:center;
 }
   
 .oneProjectImage .content:hover { 
   opacity:1; 
+  transition-duration: 0.6s;
 }      
   
 .oneProjectImage .content .oneProjImgHover2 {
-  height:0;
+  height:1;
   opacity:1;
-  transition-delay: 0.2s;
-  transition-duration: 0.8s;
 }
+
 .oneProjectImage .content:hover .oneProjImgHover2 {
   opacity:1;
-  transform: translateY(100px);
-  -webkit-transform: translateY(100px);
 }
 
 .oneProject p{
@@ -142,6 +132,7 @@ a{
 
 
 {/* FULL PROJECT PAGE CSS */}
+
 
 .oneFullProjectContainer{
   margin: 0;

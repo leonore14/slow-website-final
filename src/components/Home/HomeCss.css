@@ -1,5 +1,13 @@
 {/* HOME PAGE */}
 
+.homeFadeIn{
+    animation: fadein 1s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
 
 .home1{
     background-image: url("../images/homepage.jpg");
@@ -71,8 +79,6 @@
 }
 
   
-
-
 .home2{
     background-image: url("../images/homePalm.jpg");
     background-size: cover;
@@ -84,37 +90,45 @@
     z-index: 0;
 }
 
+
 .homeText2{
     display: flex;
-    flex-direction: row;
-    margin-top: auto;
-    margin-bottom: 5%;
-    margin-left: 4%;
-    margin-right: 4%;
-    width: 100%;
-    height: 25%;
-}
-
-.homeContainerLeft2{
-    display: flex;
     flex-direction: column;
-    margin-bottom: 5%;
+    background-color: #191919;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    z-index: 0;
 }
 
 .homeTitle2{
-    font-size: 1.6em;
-
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: white;
+    margin-left: 10%;
+    margin-top: 10%;
+    font-style: oblique 40deg;
+    font-size: 3rem;
 }
+
 
 .homeP2{
-    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: white;
+    margin-left: 20%;
+    margin-right: 15%;
+    margin-top: 5%;
+    font-size: 1.8rem;
 }
 
-.homeContainerRight2{
-    display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
-}
 
 .home3{
     background-image: url("../images/homeVinyl.jpg");
@@ -127,35 +141,43 @@
     z-index: 0;
 }
 
+
 .homeText3{
     display: flex;
-    flex-direction: row;
-    margin-top: auto;
-    margin-bottom: 5%;
-    margin-left: 4%;
-    margin-right: 4%;
-    width: 100%;
-    height: 25%;
-}
-
-.homeContainerLeft3{
-    display: flex;
     flex-direction: column;
-    margin-bottom: 5%;
+    background-color: #191919;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    z-index: 0;
 }
 
 .homeTitle3{
-    font-size: 1.6em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: white;
+    margin-left: 10%;
+    margin-top: 10%;
+    font-style: oblique 40deg;
+    font-size: 3rem;
 }
+
 
 .homeP3{
-    margin-top: 2%;
-}
-
-.homeContainerRight3{
     display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
+    flex-direction: column;
+    align-items: left;
+    color: white;
+    margin-left: 20%;
+    margin-right: 15%;
+    margin-top: 5%;
+    font-size: 1.8rem;
 }
 
 
@@ -202,6 +224,9 @@
 .upArrowStyle{
     width: 45%;
 }
+
+
+
 
 
 
