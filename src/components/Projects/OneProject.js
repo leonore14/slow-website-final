@@ -10,9 +10,13 @@ const OneProject = ({ projectInfo }) => {
         <div className="oneProject" >
             <div className="oneProjectImage">
               <img className="oneProjImgHover" src={projectInfo.ProjectImage1.url} alt={projectInfo.ProjectName} />
-              <div className="content">
-                <p className="oneProjImgHover2">{projectInfo.ProjectShortDescription} </p>
-              </div>
+              
+                <div className="content">
+                { projectInfo.ProjectImage4 && 
+                  <img className="oneProjImgHover2" src={projectInfo.ProjectImage4.url} alt={projectInfo.ProjectName} />
+                }
+                </div>
+              
             </div>
             <div className="oneProjectText">
               <p><strong>{projectInfo.ProjectName} </strong></p>

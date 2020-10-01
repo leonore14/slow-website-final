@@ -23,6 +23,7 @@ class Contact extends React.Component {
     return (
 
         <>
+        <div className='contactFadeIn'>
 
         <Navbar /> 
 
@@ -97,7 +98,8 @@ class Contact extends React.Component {
         </div>
 
         <Footer />
-        
+
+        </div>
         </>
         
 

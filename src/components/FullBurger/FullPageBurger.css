@@ -1,25 +1,35 @@
 {/* FULL PAGE BURGER CSS */}
 
-
 .fullPageBurgerNav{
     margin-right: 4%;
     margin-left: 4%;
     margin-top: 1.5%;
+    margin-bottom: 0;
     width: 100%;
-    position: absolute;
-    z-index: 2;
-}
-
-.fullPageBurgerNav ul{
-    list-style: none;
     display: flex;
-    align-items: center;
+    z-index: 5 ;
+    position: absolute;
 }
 
 .fullPageBurgerNav a{
     text-decoration: none;
     color: black;
 }
+
+.fullPageBurgerNav ul{
+    list-style: none;
+    display: flex;
+    align-items: center ; 
+    width: 100%;
+}
+
+.fullPageBurgerNav li{
+    transition: 0.2s ease-out;
+}
+
+.burgerFullPageDashes li:hover{
+    opacity: 0.4;
+}  
 
 .navbarLogo li:hover{
     opacity: 0.75;
@@ -34,18 +44,48 @@
     width:70%;
     justify-self: flex-start;
     align-self: center; 
+}   
+
+.burgerFullPageDashesContainer{
+    display: flex;
+    justify-self: flex-end ! important ;  
 }
+
+.burgerFullPageDashes{
+    align-self: center  ; 
+    width: 2rem;
+    height: 2rem;
+    z-index: 5;
+}
+
+.burgerFullPageDashes div{
+    width: 2rem;
+    height: 0.15rem;
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+}
+
 
 
 {/* FULL PAGE BURGER RESPONSIVENESS */}
   
-  
-  @media screen and (max-width: 768px){
-  
+@media (min-width: 769px) {
 
+    .burgerFullPageDashes div{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column nowrap;
+    }
+
+}
+
+  
+@media screen and (max-width: 768px){
+  
     .burgerFullPageDashes{
-      display: none;
+        display: none;
     }
   
-  }
+}
   

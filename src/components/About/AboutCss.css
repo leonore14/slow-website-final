@@ -5,6 +5,15 @@
     margin-left: 10%;
 }
 
+.aboutFadeIn{
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 .aboutTopPage{
     height: 18vh;
 }
