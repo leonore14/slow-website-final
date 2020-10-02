@@ -18,6 +18,7 @@ const Home = () => (
   
 
     render={({ state, fullpageApi }) => {
+      
 
       return (
 
@@ -54,9 +55,12 @@ const Home = () => (
 
           <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
             <div className='home2'>
+              <div className="home2Left">
+              </div>
+              <div className="home2Right">
+              </div>
             </div>
-          </div>
-     
+          </div>   
 
           <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
               <div className="homeText2">
@@ -73,8 +77,12 @@ const Home = () => (
 
           <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
             <div className='home3'>
+              <div className="home3Left">
+              </div>
+              <div className="home3Right">
+              </div>
             </div>
-          </div>
+          </div>  
 
           <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
               <div className="homeText3">
@@ -90,18 +98,15 @@ const Home = () => (
 
           <div className="section">
             <div className='home4'>
-              <div className="homeText4">
-                <div className='homeContainerLeft4'>
-                </div>
-                <div className='homeContainerRight4'>
+              <div className="home4Left">
+              </div>
+              <div className="home4Right">
                   <div className="upArrow" onClick={() => fullpageApi.moveTo(1)}>
                     <img alt="" src={arrowup} className="upArrowStyle" />
                   </div>
-                </div>
               </div>
             </div>
-          </div>
-
+          </div>  
           
           <div className="section fp-auto-height">
             <Footer />
