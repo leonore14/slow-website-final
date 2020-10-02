@@ -10,7 +10,7 @@
 }
 
 .oneProjectTopPage{
-  height: 16vh;
+  height: 14vh;
 }
 
 .oneProjectBottomPage{
@@ -132,6 +132,10 @@ a{
 
 
 {/* FULL PROJECT PAGE CSS */}
+
+.oneProjectTopPage{
+  height: 18vh;
+}
 
 
 .oneFullProjectContainer{

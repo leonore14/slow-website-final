@@ -144,13 +144,41 @@
 
 @media screen and (max-width: 575px){
 
-    .contactSlowStudio{
-      flex-direction: column;
-    }
-  
-    .funnySlow{
-      margin-top: 14%;
-      margin-bottom:8%;
-    }
-  
+  .contactTopPage{
+    height: 24vh;
   }
+
+  .contactBottomPage{
+    height: 6vh;
+  }
+
+  .contactProject{
+    margin-bottom: 4%;
+  }
+
+  .contactDiscover{
+    margin-top:12%;
+    margin-bottom: 4%;
+  }
+
+  .contactFormTitle{
+    margin-top:12%;
+    margin-bottom: 4%;
+  }
+
+  .contactAnything{
+    margin-top:12%;
+    margin-bottom: 4%;
+  }
+
+  .contactSlowStudio{
+    flex-direction: column;
+  }
+  
+  .funnySlow{
+    margin-top: 14%;
+    margin-bottom:8%;
+    width: 80%;
+  }
+  
+}

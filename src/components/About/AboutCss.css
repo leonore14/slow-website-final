@@ -88,6 +88,28 @@
 
 @media screen and (max-width: 575px){
 
+    .aboutTopPage{
+        height: 24vh;
+    }
+
+    .aboutBottomPage{
+        height: 6vh;
+    }
+
+    .theStudioTitle{
+        margin-bottom: 4%;
+    }
+      
+    .theVibesTitle{
+        margin-top:12%;
+        margin-bottom: 4%;
+    }
+
+    .ourTeamTitle{
+        margin-top:12%;
+        margin-bottom: 4%;
+    }
+
     .ourTeamPhotos{
       flex-direction: column;
     }
