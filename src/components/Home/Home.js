@@ -63,16 +63,10 @@ const Home = () => (
           </div>   
 
           <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
-              <div className="homeText2">
-                  <div className="homeTitle2">
-                      <h1>BRAND</h1>
-                      <h1>IDENTITY</h1>
-                  </div>
                   <div className="homeP2">
-                      <p>We propose to help you to establish your Brand Identity, creating strong logotypes and wordmarks.</p>
+                      <p>We propose to help you to establish your brand identity, creating strong logotypes and wordmarks.</p>
                       <p>We will also develop your visual identity on the different supports you may need.</p>
                   </div>
-              </div>
           </div>
 
           <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
@@ -85,15 +79,10 @@ const Home = () => (
           </div>  
 
           <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
-              <div className="homeText3">
-                <div className="homeTitle3">
-                      <h1>DIGITAL</h1>
-                  </div>
                   <div className="homeP3">
                       <p>Being visible on Internet has become essential for any company.</p>
                       <p>We offer you to build modern and dynamic websites to facilitate and improve your development.</p>
                   </div>
-              </div>
           </div>
 
           <div className="section">

@@ -10,7 +10,7 @@
   }
 
 .home1{
-    background-image: url("../images/homepage.jpg");
+    background-image: url("../images/backHome2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,6 +35,22 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 5%;
+    animation-duration: 3s;
+    animation-name: slidein;
+    }
+
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+            opacity: 0;
+          }
+        
+          to {
+            margin-left: 0%;
+            width: 100%;
+            opacity: 1;
+          }
 }
 
 .homeTitle1{
@@ -110,42 +126,24 @@
 }
 
 
-.homeText2{
-    display: flex;
-    flex-direction: column;
-    background-color: #191919;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    position: relative;
-    z-index: 0;
-}
-
-.homeTitle2{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    color: white;
-    margin-left: 10%;
-    margin-top: 10%;
-    font-style: oblique 40deg;
-    font-size: 3rem;
-}
-
-
 .homeP2{
     display: flex;
     flex-direction: column;
-    align-items: left;
+    background-color: #1E2118;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.homeP2 p{
+    text-align: center;
+    width : 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
     color: white;
-    margin-left: 20%;
-    margin-right: 15%;
-    margin-top: 5%;
-    font-size: 1.8rem;
+    font-size: 1.7em;
+    line-height: 2rem;
 }
 
 
@@ -180,42 +178,24 @@
 }
 
 
-.homeText3{
-    display: flex;
-    flex-direction: column;
-    background-color: #191919;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    position: relative;
-    z-index: 0;
-}
-
-.homeTitle3{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    color: white;
-    margin-left: 10%;
-    margin-top: 10%;
-    font-style: oblique 40deg;
-    font-size: 3rem;
-}
-
-
 .homeP3{
     display: flex;
     flex-direction: column;
-    align-items: left;
+    background-color: #1E2118;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.homeP3 p{
+    text-align: center;
+    width : 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
     color: white;
-    margin-left: 20%;
-    margin-right: 15%;
-    margin-top: 5%;
-    font-size: 1.8rem;
+    font-size: 1.7em;
+    line-height: 2rem;
 }
 
 
@@ -293,6 +273,17 @@
     }
     .home4Right{
         width: 100vw;
+    }
+
+   
+    .homeP2 p{
+        font-size: 1.6rem;
+        margin-bottom: 4%;
+    }
+
+    .homeP3 p{
+        font-size: 1.6rem;
+        margin-bottom: 4%;
     }
     
 }

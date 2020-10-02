@@ -22,6 +22,7 @@ const OneProject = ({ projectInfo }) => {
               <p><strong>{projectInfo.ProjectName} </strong></p>
               <p>{projectInfo.ProjectShortDescription} </p>
             </div>
+            
         </div>
     
     </>
