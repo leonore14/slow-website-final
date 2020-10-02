@@ -4,7 +4,7 @@ import OneProject from './OneProject';
 import Footer from '../Footer/Footer';
 import '../Footer/FooterCss.css';
 import { Link } from 'react-router-dom';
-import NavProjects from '../testNewNavProjects/NavProjects';
+import Navbar from '../Navbar/Navbar';
 
 
 const ProjectsPage = ({ projects }) => {
@@ -18,7 +18,7 @@ const ProjectsPage = ({ projects }) => {
 
             <div className="projectsFadeIn">
 
-            <NavProjects />
+            <Navbar />
 
             <div>
 

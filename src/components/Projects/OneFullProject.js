@@ -1,10 +1,10 @@
 import React from "react";
-import "./ProjectsCss.css";
+import "./OneFullProjectCss.css";
 import Footer from '../Footer/Footer';
 import '../Footer/FooterCss.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import arrowupBlack from '../images/slow-creative-arrow-up.svg';
-import NavProjects from '../testNewNavProjects/NavProjects';
+import Navbar from '../Navbar/Navbar';
 
 
 
@@ -30,7 +30,7 @@ const OneFullProject = ({ routeProps, projects }) => (
         
         <ReactFullpage.Wrapper>
 
-        <NavProjects />
+        <Navbar />
         
           <div className="oneFullProjectContainer">
 
@@ -51,15 +51,22 @@ const OneFullProject = ({ routeProps, projects }) => (
                 </div>
                 }
                 
-                { matchProject.ProjectImage2 &&
+                { matchProject.ProjectImage2 && 
                 <div className="section">
                   <img className="oneFullProjectImage2" src={matchProject.ProjectImage2.url} alt={matchProject.ProjectName} onClick={() => fullpageApi.moveSectionDown()} />
                 </div>
                 }
 
-                { matchProject.ProjectImage3 &&
+                { matchProject.ProjectImage3 && matchProject.ProjectImage5 &&
                 <div className="section">
-                  <img className="oneFullProjectImage3" src={matchProject.ProjectImage3.url} alt={matchProject.ProjectName} onClick={() => fullpageApi.moveSectionDown()} />
+                  <div className="projectDoubleImg1">
+                    <div className='projectSection3'>
+                      <img className="oneFullProjectImage3" src={matchProject.ProjectImage3.url} alt={matchProject.ProjectName} onClick={() => fullpageApi.moveSectionDown()} />
+                    </div>
+                    <div className="projectSection5">
+                      <img className="oneFullProjectImage5" src={matchProject.ProjectImage5.url} alt={matchProject.ProjectName} onClick={() => fullpageApi.moveSectionDown()} />
+                    </div>
+                  </div>
                 </div>
                 }
 
@@ -69,20 +76,19 @@ const OneFullProject = ({ routeProps, projects }) => (
                 </div>
                 }
 
-                { matchProject.ProjectImage5 && 
+                { matchProject.ProjectImage7 && matchProject.ProjectImage8 && 
                 <div className="section">
-                  <div className="bottomOneFullPageContainer">
-                    <div className="imageContainer">
-                      <img 
-                        className="oneFullProjectImage5" 
-                        src={matchProject.ProjectImage5.url} 
-                        alt={matchProject.ProjectName} 
-                        onClick={() => fullpageApi.moveSectionUp()} />
+                  <div className="projectDoubleImg2">
+                    <div className='projectSection7'>
+                      <img className="oneFullProjectImage7" src={matchProject.ProjectImage7.url} alt={matchProject.ProjectName} onClick={() => fullpageApi.moveSectionUp()} />
                     </div>
-                  </div>
-                  <div className="upArrow" onClick={() => fullpageApi.moveTo(1)}>
-                      <img alt="" src={arrowupBlack} className="upArrowStyle" />
-                  </div>
+                    <div className="projectSection8">
+                      <img className="oneFullProjectImage8" src={matchProject.ProjectImage8.url} alt={matchProject.ProjectName} onClick={() => fullpageApi.moveSectionUp()} />
+                      <div className="upArrow" onClick={() => fullpageApi.moveTo(1)}>
+                        <img alt="" src={arrowupBlack} className="upArrowStyle" />
+                      </div>
+                    </div>
+                  </div> 
                 </div>
                 }
 
