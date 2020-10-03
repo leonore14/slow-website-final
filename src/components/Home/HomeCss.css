@@ -196,37 +196,6 @@
 }
 
 
-.home3{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    z-index: 0;
-}
-.home3Left{
-    background-image: url("../images/leftHomeVinyl.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 50vw;
-    display: flex;
-    z-index: 0;
-}
-.home3Right{
-    background-image: url("../images/rightHomeVinyl.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 50vw;
-    display: flex;
-    z-index: 0;
-}
-
-
 .homeP3{
     display: flex;
     flex-direction: column;
@@ -314,15 +283,6 @@
         width: 100vw;
     }
 
-    .home3{
-        flex-direction: column;
-    }
-    .home3Left{
-        display: none;
-    }
-    .home3Right{
-        width: 100vw;
-    }
 
     .home4{
         flex-direction: column;
