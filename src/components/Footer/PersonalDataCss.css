@@ -77,3 +77,11 @@
 
 
 {/* RESPONSIVENESS */}
+
+@media screen and (max-width: 768px){
+
+    .personalDataTitle{
+        margin-top:30%;
+        
+    }
+}
