@@ -34,3 +34,12 @@
 
 
   {/* RESPONSIVENESS */}
+
+  @media screen and (max-width: 575px){
+
+  .footer{
+    font-size: 0.6rem;
+  }
+
+}
+

@@ -2,6 +2,8 @@ import React from "react";
 import './PersonalDataCss.css';
 import Footer from './Footer';
 import arrowUpBlack from '../images/slow-creative-arrow-up.svg';
+import Navbar from '../Navbar/Navbar';
+
 
 const scrollTop = () =>{
   window.scrollTo({top: 0, behavior: 'smooth'});
@@ -10,6 +12,10 @@ const scrollTop = () =>{
 const PersonalData = () => {
   return (
     <>
+    <div className='aboutFadeIn'>
+
+    <Navbar /> 
+
     <div className="personalData">
 
       <div className="personalDataTitle">
@@ -785,6 +791,8 @@ const PersonalData = () => {
     </div>
 
     <Footer />
+
+    </div>
 
     </>
   );

@@ -6,7 +6,7 @@ import arrowdown from '../images/slow-creative-arrow-down.svg';
 import arrowup from '../images/slow-creative-arrow-up-wht.svg';
 import Navbar from '../Navbar/Navbar';
 import "animate.css/animate.min.css";
-
+import { Link } from 'react-router-dom';
 
 
 const Home = () => (
@@ -79,7 +79,7 @@ const Home = () => (
               <div className="homeLinkProjectsPage">
                 <div className="homeLinkProjectsDiv">
                   <div className="line-animation">
-                    <a href="/project/1">View Project</a>
+                    <Link to='/project/1'>View Project</Link>
                   </div>
                 </div>
               </div>

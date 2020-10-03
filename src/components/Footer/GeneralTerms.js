@@ -2,6 +2,7 @@ import React from 'react';
 import './GeneralTermsCss.css';
 import Footer from './Footer';
 import arrowUpBlack from '../images/slow-creative-arrow-up.svg';
+import Navbar from '../Navbar/Navbar';
 
 const scrollTop = () =>{
     window.scrollTo({top: 0, behavior: 'smooth'});
@@ -10,7 +11,12 @@ const scrollTop = () =>{
 const GeneralTerms = () => {
     return(
         <>
-        <div className="generalTerms">
+
+            <div className='aboutFadeIn'>
+
+       
+            <Navbar /> 
+            <div className="generalTerms">
                 <div className="termsTitle">
                     <h1>Terms and Conditions for Slow Creative Studio.</h1>
                 </div>
@@ -245,6 +251,8 @@ const GeneralTerms = () => {
         </div>
 
         <Footer />
+
+        </div>
 
         </>
     )

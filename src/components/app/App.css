@@ -24,6 +24,7 @@ body {
 
 .instaLogo img{
   width: 25%;
+  margin-top: 1%;
 }
 
 
@@ -39,6 +40,16 @@ body {
 
 
 {/* RESPONSIVENESS */}
+
+@media (max-width: 575px) {
+
+  .instaLogo img{
+    width: 28%;
+  }
+
+
+
+}
 
 
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import ScrollToTop from 'react-router-scroll-top'
 import { Switch, Route } from 'react-router-dom';
 import ProjectsPage from '../Projects/ProjectsPage';
 import Home from '../Home/Home';
@@ -10,9 +10,7 @@ import GeneralTerms from '../Footer/GeneralTerms';
 import PersonalData from '../Footer/PersonalData';
 import Burger from '../ResponsiveBurgerNavbar/Burger';
 import OneFullProject from '../Projects/OneFullProject';
-import Cetus from '../Projects/notUsed/Cetus';
-import Quiksilver from '../Projects/notUsed/Quiksilver';
-import ScrollToTop from 'react-router-scroll-top'
+import './App.css';
 
 
 
@@ -56,8 +54,6 @@ class App extends Component {
         <Route path='/copyright' component={Copyright} />
         <Route path='/generalTerms' component={GeneralTerms} />
         <Route path='/personalData' component={PersonalData} />
-        <Route path='/CetusBiarritz.' component={Cetus} />
-        <Route path='/Quiksilver.' component={Quiksilver} />
         <Route path='/project/:id' render={(routeProps) => projects.length > 0 && <OneFullProject routeProps={routeProps} projects={projects} />} />
       </Switch>
 
