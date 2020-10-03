@@ -18,6 +18,12 @@ const Home = () => (
   
 
     render={({ state, fullpageApi }) => {
+
+      const specialClick = (e) => {
+        if(e.target.tagName === 'DIV'){
+          fullpageApi.moveSectionDown()
+        }
+      }
       
 
       return (
@@ -61,6 +67,17 @@ const Home = () => (
               </div>
             </div>
           </div>   
+
+          <div className="section" onClick={specialClick}>
+              <div className="homeLinkProjectsPage">
+                <div className="homeLinkProjectsDiv">
+                  <div className="line-animation">
+                    <a href="/project/1">View Project</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+
 
           <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
                   <div className="homeP2">
