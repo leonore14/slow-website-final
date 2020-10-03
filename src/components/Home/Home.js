@@ -85,15 +85,6 @@ const Home = () => (
               </div>
           </div>
 
-          {/* <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
-            <div className='home3'>
-              <div className="home3Left">
-              </div>
-              <div className="home3Right">
-              </div>
-            </div>
-          </div> */}
-
         <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
                   <div className="yin">
                   </div>
