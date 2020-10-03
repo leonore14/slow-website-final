@@ -34,8 +34,11 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    -webkit-animation-duration: 0.6s;
     animation-duration: 0.6s;
+    -webkit-animation-name: slideInUp;
     animation-name: slideInUp;
+    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     }
     @keyframes slideInUp {
@@ -119,7 +122,8 @@
 
 
 .homeLinkProjectsPage{
-    background-image: url("../images/cetus1.jpg");
+    background-color: black;
+    background-image: url("../images/robinB.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -174,7 +178,7 @@
 .homeP2{
     display: flex;
     flex-direction: column;
-    background-color: #1E2118;
+    background-color: #ffd4e1b2;
     width: 100vw;
     height: 100vh;
     align-items: center;
@@ -186,7 +190,7 @@
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 2%;
-    color: white;
+    color: black;
     font-size: 1.8rem;
     line-height: 2rem;
 }
@@ -226,7 +230,7 @@
 .homeP3{
     display: flex;
     flex-direction: column;
-    background-color: #1E2118;
+    background-color: #428092e0;
     width: 100vw;
     height: 100vh;
     align-items: center;
@@ -236,7 +240,7 @@
     text-align: center;
     width : 60%;
     margin-bottom: 2%;
-    color: white;
+    color: black;
     font-size: 1.8rem;
     line-height: 2rem;
     margin-left: 20%;
@@ -284,6 +288,16 @@
     width: 45%;
 }
 
+.yin{
+    background-image: url("../images/yingggg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    z-index: 0;
+}
 
 {/* RESPONSIVENESS */}
 
