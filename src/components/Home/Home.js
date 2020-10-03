@@ -68,6 +68,13 @@ const Home = () => (
             </div>
           </div>   
 
+          <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
+                  <div className="homeP2">
+                      <p>We propose to help you to establish your brand identity, creating strong logotypes and wordmarks.</p>
+                      <p>We will also develop your visual identity on the different supports you may need.</p>
+                  </div>
+          </div>
+
           <div className="section" onClick={specialClick}>
               <div className="homeLinkProjectsPage">
                 <div className="homeLinkProjectsDiv">
@@ -78,22 +85,19 @@ const Home = () => (
               </div>
           </div>
 
-
-          <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
-                  <div className="homeP2">
-                      <p>We propose to help you to establish your brand identity, creating strong logotypes and wordmarks.</p>
-                      <p>We will also develop your visual identity on the different supports you may need.</p>
-                  </div>
-          </div>
-
-          <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
+          {/* <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
             <div className='home3'>
               <div className="home3Left">
               </div>
               <div className="home3Right">
               </div>
             </div>
-          </div>  
+          </div> */}
+
+        <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
+                  <div className="yin">
+                  </div>
+          </div>
 
           <div className="section" onClick={() => fullpageApi.moveSectionDown()}>
                   <div className="homeP3">
