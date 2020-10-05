@@ -76,12 +76,16 @@ class Contact extends React.Component {
                 </div>
                 <div className="contactSlowStudio">
                     <div className="contactSlowStudioText">
-                        <p>Slõw Creative Studio</p>
-                        <p>48 Avenue du President Kennedy</p>
-                        <p>64200 Biarritz</p>
-                        <p>France</p>
+                        <a target="blank" href="https://www.google.com/maps/place/48+Avenue+du+Pr%C3%A9sident+J+F+Kennedy,+64200+Biarritz/@43.4713316,-1.5577687,17z/data=!3m1!4b1!4m5!3m4!1s0xd51152b71c332bd:0x52441abeac86d5df!8m2!3d43.4713316!4d-1.55558">
+                            <p>Slõw Creative Studio</p>
+                            <p>48 Avenue du President Kennedy</p>
+                            <p>64200 Biarritz</p>
+                            <p>France</p>
+                        </a>
                         <br></br>
-                        <p>+33 6 88 50 93 81</p>
+                        <a href="tel:+3368509381">
+                            <p>+33 6 88 50 93 81</p>
+                        </a>
                         <br></br>
                         <p><a href="mailto:contact@slowcreativestudio.com">contact@slowcreativestudio.com</a></p>
                     </div>
