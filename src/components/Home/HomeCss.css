@@ -273,6 +273,13 @@
 
 @media screen and (max-width: 575px){
 
+    .home1{
+        background-position: 70%;
+    }
+    .homeText1{
+        margin-bottom: 12%;
+    }
+
     .home2{
         flex-direction: column;
     }
@@ -282,7 +289,6 @@
     .home2Right{
         width: 100vw;
     }
-
 
     .home4{
         flex-direction: column;
@@ -294,7 +300,10 @@
         width: 100vw;
     }
 
-   
+    .upArrow{
+        margin-bottom: 10%;
+    }
+
     .homeP2 p{
         font-size: 1.6rem;
         margin-bottom: 4%;
@@ -306,7 +315,7 @@
     }
 
     .line-animation{
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         margin-right: 10%;
     }
     .homeLinkProjectsDiv a{
