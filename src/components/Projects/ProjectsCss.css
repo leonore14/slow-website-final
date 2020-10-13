@@ -1,0 +1,169 @@
+{/* PROJECTS PAGE CSS */}
+
+.projectsFadeIn{
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.oneProjectTopPage{
+  height: 14vh;
+}
+
+.oneProjectBottomPage{
+  height: 9vh;
+}
+
+.projectTitle{
+  display: flex;
+  flex-direction: row;
+  margin-top:5%;
+  margin-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.projectTitle h5{
+  padding : 1%;
+  letter-spacing: 0.1rem;
+}
+
+.projects{
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+{/* ONE PROJECTS PAGE CSS */}
+
+
+.oneProjectLink{
+  width: 30%;
+  margin: 1.5%;
+  margin-bottom: 4%;
+  justify-content: center;
+}
+
+.oneProject{
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+  margin: 0;
+}
+
+.oneProjectText{
+  justify-self: flex-end;
+}
+
+.oneProject img{
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+.oneProjectImage{
+  position:relative;
+  padding:0;
+  width:100%;
+  display:block;
+  cursor:pointer;
+  overflow:hidden;
+}
+
+.content {
+  opacity:0;
+  font-size: 20px;
+  position:absolute;
+  top:0;
+  left:0;
+  background-color:rgba(255, 255, 255, 0.7);
+  width:100%;
+  height:300px;
+  text-align:center;
+}
+  
+.oneProjectImage .content:hover { 
+  opacity:1; 
+  transition-duration: 0.6s;
+}      
+  
+.oneProjectImage .content .oneProjImgHover2 {
+  height:1;
+  opacity:1;
+}
+
+.oneProjectImage .content:hover .oneProjImgHover2 {
+  opacity:1;
+}
+
+.oneProject p{
+  margin-top: 2%;
+  color: black;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+{/* RESPONSIVENESS */}
+
+@media screen and (max-width: 1100px){
+
+  .projectTitle{
+    margin-top:4%;
+    margin-bottom: 1%;
+  }
+
+  .oneProjectBottomPage{
+    height: 5vh;
+  }
+
+  .projects{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .oneProjectLink{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6% ;
+    margin-bottom: 2%;
+  }
+
+}
+
+
+@media screen and (max-width: 575px){
+
+  .projectTitle{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .projects{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .oneProjectLink{
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6% ;
+  }
+
+  .oneProject img{
+    height: 170px;
+  }
+
+}
+
+

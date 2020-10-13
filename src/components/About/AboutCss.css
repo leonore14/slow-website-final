@@ -1,66 +1,85 @@
 
-{/* ABOUT PAGE */}
+{/* ABOUT PAGE CSS */}
 
 .about{
     margin-left: 10%;
-  }
+}
+
+.aboutFadeIn{
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.aboutTopPage{
+    height: 18vh;
+}
   
-  .theStudioTitle{
-    margin-top:15%;
+.aboutBottomPage{
+    height: 14vh;
+}
+  
+.theStudioTitle{
+    margin-top:5%;
     margin-bottom: 2%;
-  }
+}
   
-  .theStudioText{
+.theStudioText{
     margin-left: 3%;
     margin-right: 45%;
-  }
+    text-align: justify;
+}
   
-  .theVibesTitle{
+.theVibesTitle{
     margin-top:8%;
     margin-bottom: 2%;
-  }
+}
   
-  .theVibesText{
+.theVibesText{
     margin-left: 3%;
     margin-right: 45%;
-  }
+    text-align: justify;
+}
   
-  .ourTeamTitle{
+.ourTeamTitle{
     margin-top:8%;
     margin-bottom: 2%;
-  }
+}
   
-  .ourTeamPhotos{
+.ourTeamPhotos{
     display: flex;
     flex-direction: row;
     margin-top: 3%;
     margin-left: 3%;
-    margin-bottom: 2%;
-  }
+    margin-bottom: 1%;
+}
   
-  .leonore{
+.leonore{
     margin-right: 5%;
-  }
+}
   
-  .leonore img{
+.leonore img{
     margin-bottom: 5%;
-  }
+}
   
-  .damien{
+.damien{
     margin-right: 5%;
-  }
+}
   
-  .damien img{
+.damien img{
     margin-bottom: 5%;
-  }
+}
   
-  .leonoreText{
+.leonoreText{
     font-size: small;
-  }
+}
   
-  .damienText{
+.damienText{
     font-size: small;
-  }
+}
 
 
 
@@ -68,6 +87,28 @@
 
 
 @media screen and (max-width: 575px){
+
+    .aboutTopPage{
+        height: 24vh;
+    }
+
+    .aboutBottomPage{
+        height: 6vh;
+    }
+
+    .theStudioTitle{
+        margin-bottom: 4%;
+    }
+      
+    .theVibesTitle{
+        margin-top:12%;
+        margin-bottom: 4%;
+    }
+
+    .ourTeamTitle{
+        margin-top:12%;
+        margin-bottom: 4%;
+    }
 
     .ourTeamPhotos{
       flex-direction: column;
@@ -78,5 +119,5 @@
       margin-bottom:8%;
     }
   
-  }
+}
   

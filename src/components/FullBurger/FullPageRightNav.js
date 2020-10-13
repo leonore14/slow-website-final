@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import InstaLogo from '../images/instagram.svg';
 
 
 const Ul = styled.ul`
@@ -9,7 +8,7 @@ const Ul = styled.ul`
   z-index: 4;
   display: none;
 
-  @media (max-width: 768px) {
+  @media (min-width: 769px) {
     display: flex;
     flex-flow: column nowrap;
     list-style: none;
@@ -51,7 +50,6 @@ const Ul = styled.ul`
 
 
 
-
 const RightNav = ({ open, handleClose }) => {
 
     return(
@@ -67,9 +65,6 @@ const RightNav = ({ open, handleClose }) => {
                     </li>
                     <li>
                         <NavLink to='/contact' activeClassName='active' className="rightNavContact" onClick={() => handleClose()}>Contact</NavLink>
-                    </li>
-                    <li>
-                      <a activeclassname='active' target="blank" href='https://www.instagram.com/slow.creative/' className="instaLogo"><img src={InstaLogo} alt='Instagram'></img></a>
                     </li>
             </Ul>
     )

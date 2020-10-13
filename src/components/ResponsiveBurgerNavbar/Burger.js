@@ -7,9 +7,9 @@ const StyledBurger = styled.div`
     width: 2rem;
     height: 2rem;
     position: fixed;
-    top: 15px;
-    right: 20px;
-    z-index: 4;
+    top: 5%;
+    right: 4%;
+    z-index: 5;
     display: none;
     
     @media (max-width: 768px) {
@@ -20,7 +20,7 @@ const StyledBurger = styled.div`
   
     div {
       width: 2rem;
-      height: 0.25rem;
+      height: 0.15rem;
       background-color: ${({ open }) => open ? 'black' : 'black'};
       border-radius: 10px;
       transform-origin: 1px;
@@ -48,6 +48,10 @@ const Burger = () => {
 
     const [open, setOpen] = useState(false)
 
+    const handleClose  = () => {
+      setOpen(false)
+    }
+
     return(
         <>
            <StyledBurger open={open} onClick={() => setOpen(!open)}>
@@ -55,7 +59,7 @@ const Burger = () => {
                 <div />
                 <div />
             </StyledBurger>
-            <RightNav open={open}/>
+            <RightNav open={open} handleClose={handleClose} />
         </>
     )
 }

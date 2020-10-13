@@ -1,103 +1,336 @@
 {/* HOME PAGE */}
 
+.homeFadeIn{
+    animation: fadein 1s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
 
-.home{
-    background-image: url("../images/sunset2.jpg");
+.home1{
+    background-image: url("../images/backHome2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
     display: flex;
-    position: relative;
     z-index: 0;
 }
 
-.home--inside-scroller {
-    position: absolute;
-    right: 20px;
-    top: 100px;
-}
-
 .homeText1{
-    margin-top: 34%;
-    margin-left: 4%;
-    margin-right: 65%;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
     margin-bottom: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 100%;
+    height: 25%;
 }
-
-.homeTitle{
+.homeContainerLeft1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @keyframes slideInUp {
+        0% {
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+        }
+}
+.homeTitle1{
     font-size: 1.6em;
 }
-
 .homeP1{
     margin-top: 2%;
 }
 
+.homeContainerRight1{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+.downArrow{
+    align-self: center;
+}
+.bounce {
+	animation-name: bounce;
+    animation-duration: 4s; /* or: Xms */
+    animation-iteration-count: 4;
+    align-self: flex-end;
+}   
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% { 
+            transform: translateY(-30px);
+        }
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+.downArrowStyle{
+    width: 45%;
+}
 
-
+  
 .home2{
-    background-image: url("../images/homePalm.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
     display: flex;
+    z-index: 0;
+}
+.home2Left{
+    background-image: url("../images/leftHomePalm.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    z-index: 0;
+}
+.home2Right{
+    background-image: url("../images/rightHomePalm.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    z-index: 0;
 }
 
-.homeText2{
-    margin-top: 38%;
-    margin-left: 4%;
-    margin-right: 65%;
+
+.homeLinkProjectsPage{
+    background-color: black;
+    background-image: url("../images/robinB.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    z-index: 0;
+}
+.homeLinkProjectsDiv{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 1;
+}
+.line-animation{
     margin-bottom: 5%;
+    margin-right: 5%;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+.line-animation:after {
+	content: '';
+	display: block;
+	margin: 0;
+    height: 2px;
+    bottom: 0;
+    top: 0;
+    animation: slide 3s ease-in-out infinite;
+    transform: translateX(100%)
+}
+.homeLinkProjectsDiv a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    width: 100%;
+}
+@keyframes slide {
+    0% { 
+        width: 0%; 
+        background-color: black;
+    }
+    100% {
+        width: 55%; 
+        background-color: transparent;
+    }
 }
 
-.homeTitle2{
-    color: white;
-    font-size: 1.2em;
-}
+
 
 .homeP2{
-    margin-top: 2%;
-    color: white;
-}
-
-
-
-.home3{
-    background-image: url("../images/homeVinyl.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
     display: flex;
+    flex-direction: column;
+    background-color: #ffd4e1b2;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.homeP2 p{
+    text-align: center;
+    width : 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+    color: black;
+    font-size: 1.8rem;
+    line-height: 2rem;
 }
 
-.homeText3{
-    margin-top: 40%;
-    margin-left: 4%;
-    margin-right: 65%;
-    margin-bottom: 5%;
-}
-
-.homeTitle3{
-    font-size: 1.2em;
-}
 
 .homeP3{
-    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    background-color: #428092e0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
-
+.homeP3 p{
+    text-align: center;
+    width : 60%;
+    margin-bottom: 2%;
+    color: black;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-left: 20%;
+    margin-right: 20%;
+}
 
 
 .home4{
-    background-image: url("../images/homeHand.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
     display: flex;
+    z-index: 0;
 }
+.home4Left{
+    background-image: url("../images/leftHomeHand.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    z-index: 0;
+}
+.home4Right{
+    background-image: url("../images/rightHomeHand.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    z-index: 0;
+}
+
+.upArrow{
+    justify-content: flex-end;
+    margin-left: auto;
+    align-self: flex-end;
+}
+
+.upArrowStyle{
+    width: 45%;
+}
+
+.yin{
+    background-image: url("../images/yingggg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    z-index: 0;
+}
+
+{/* RESPONSIVENESS */}
+
+
+@media screen and (max-width: 575px){
+
+    .home1{
+        background-position: 70%;
+    }
+    .homeText1{
+        margin-bottom: 12%;
+    }
+
+    .home2{
+        flex-direction: column;
+    }
+    .home2Left{
+        display: none;
+    }
+    .home2Right{
+        width: 100vw;
+    }
+
+    .home4{
+        flex-direction: column;
+    }
+    .home4Left{
+        display: none;
+    }
+    .home4Right{
+        width: 100vw;
+    }
+
+    .upArrow{
+        margin-bottom: 10%;
+    }
+
+    .homeP2 p{
+        font-size: 1.6rem;
+        margin-bottom: 4%;
+    }
+
+    .homeP3 p{
+        font-size: 1.6rem;
+        margin-bottom: 4%;
+    }
+
+    .line-animation{
+        margin-bottom: 15%;
+        margin-right: 10%;
+    }
+    .homeLinkProjectsDiv a{
+        font-size: 1.7rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+

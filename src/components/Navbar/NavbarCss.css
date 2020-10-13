@@ -1,0 +1,83 @@
+{/* NAVBAR CSS */}
+
+.navbar{
+    font-size: 0.95rem;
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-top: 1.5%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+  }
+  
+  .navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar li{
+    transition: 0.2s ease-out;
+  }
+
+  .navbar .navbarList li:hover{
+    opacity: 0.4;
+  }
+  
+  .navbar a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navbar .active{
+    font-weight: 500;
+  }
+  
+  .navbarLogo li:hover{
+    opacity: 0.75;
+  }
+
+  .navbarLogo{
+    display: flex;
+    align-self: center;
+  }
+  
+  .navbarLogoImg{
+    width:70%;
+    display: flex;
+    justify-self: flex-start;
+    align-self: center;
+  }
+  
+  .navbarList{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 7%;
+    margin-left: auto;
+    align-items: center;
+  }
+  
+  .navbarList li{
+    margin: 15%;
+  }
+  
+  
+  
+  {/* NAVBAR RESPONSIVENESS */}
+  
+  
+  @media screen and (max-width: 768px){
+  
+    .navbarList{
+      display: none;
+    }
+
+    .navbarLogo{
+      padding-top: 1.5rem;
+    }
+  
+  }
+
+  

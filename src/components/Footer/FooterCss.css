@@ -1,0 +1,45 @@
+{/* FOOTER CSS */}
+
+.footer{
+    font-size: 0.7rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: auto;
+    width: 100vw;
+  }
+  
+  .footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .footer li{
+    margin: 5%;
+    margin-bottom: 4%;
+  }
+
+  .footer li:hover{
+    font-weight: 450;
+  }
+  
+  .footer a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .footer .active{
+    font-weight: 450;
+  }
+
+
+  {/* RESPONSIVENESS */}
+
+  @media screen and (max-width: 575px){
+
+  .footer{
+    font-size: 0.6rem;
+  }
+
+}
+

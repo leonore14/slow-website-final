@@ -1,0 +1,90 @@
+{/* GENERAL TERMS PAGE CSS */}
+
+
+.generalTerms{
+    margin-left: 10%;
+}
+  
+.termsTitle{
+    margin-top:15%;
+    margin-bottom: 1%;
+    margin-right: 25%;
+}
+  
+.termsParagraphTitle{
+    margin-top:10%;
+    margin-bottom: 1%;
+    margin-right: 25%;
+}
+
+.termsParagraphSubTitle{
+    margin-top:7%;
+    margin-bottom: 1%;
+}
+  
+.termsText{
+    margin-top:2%;
+    margin-left: 3%;
+    margin-right: 45%;
+    text-align: justify;
+}
+
+.termsTextContactList{
+  margin-bottom: 10%;
+}
+
+.generalTerms ul{
+  margin-left: 5%;
+}
+
+.generalTerms li{
+  margin-top: 2%;
+}
+
+.termsTextContact{
+    margin-top:2%;
+    margin-left: 3%;
+    margin-right: 6%;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+}
+
+.termsTextContactList{
+    margin-bottom: 10%;
+}
+
+
+.termsTextContactList{
+    margin-bottom: 10%;
+}
+
+.termsContactLeftContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.termsContactRightContainer{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    align-self: center;
+}
+
+.upArrowBlackStyle{
+    width: 45%;
+}
+
+{/* RESPONSIVENESS */}
+
+
+@media screen and (max-width: 768px){
+
+    .termsTitle{
+        margin-top:30%;
+        
+    }
+}
+
+

@@ -1,0 +1,55 @@
+{/* GENERAL CSS */}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Basis+Grotesque+Pro', sans-serif ;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+
+.appDiv{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.instaLogo img{
+  width: 25%;
+  margin-top: 1%;
+}
+
+
+
+{/* COPYRIGHT PAGE */}
+.copyright{
+  margin-top:17%;
+  margin-bottom:17%;
+  text-align: center;
+}
+
+
+
+
+{/* RESPONSIVENESS */}
+
+@media (max-width: 575px) {
+
+  .instaLogo img{
+    width: 28%;
+  }
+
+
+
+}
+
+
+
