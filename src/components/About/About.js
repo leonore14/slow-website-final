@@ -1,6 +1,4 @@
 import React from 'react'
-import leonore from '../images/leonore.jpg';
-import damien from '../images/damien.jpg';
 import './AboutCss.css';
 import Footer from '../Footer/Footer';
 import '../Footer/FooterCss.css';
