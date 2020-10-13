@@ -33,9 +33,7 @@ const About = () => {
                         <h2>TheStudio.</h2>
                     </div>
                     <div className="theStudioText">
-                        <p>Slōw Creative Studio is a full-service design studio working on brand strategy, art direction, graphic design and digital projects.</p>
-                         <br></br>
-                        <p>Founded by Leonore, project manager, and Damien, creative director.</p>
+                        <p>Slōw Creative Studio is a full-service design studio working on brand strategy, art direction, graphic design and digital projects.</p>    
                         <br></br>
                         <p>The Slōw Creative Studio is based in Biarritz, south west of France.</p>
                         <br></br>
@@ -56,28 +54,6 @@ const About = () => {
                     </div>
                 </div>
 
-
-                <div>
-                    <div className="ourTeamTitle">
-                        <h2>OurTeam.</h2>
-                    </div>
-                    <div className="ourTeamPhotos">
-                        <div className="leonore">
-                            <img src={leonore} alt="leonore-project-manager" />
-                            <div className="leonoreText">
-                                <p>Leonore</p>
-                                <p>Project Manager</p> 
-                            </div>
-                        </div>
-                        <div className="damien">
-                            <img src={damien} alt="leonore-project-manager" />
-                            <div className="damienText">
-                                <p>Damien</p>
-                                <p>Creative Director</p>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
 

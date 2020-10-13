@@ -770,16 +770,6 @@ const PersonalData = () => {
                             <br></br>
                             www.slowcreativestudio.com
                         </li>
-                        <br></br>
-                        <li>By phone number: 
-                            <br></br>
-                            +33.6.88.50.93.81
-                        </li>
-                        <br></br>
-                        <li>By mail: 
-                            <br></br>
-                            48 Avenue du President Kennedy, 64200 Biarritz, France
-                        </li>
                     </ul>
                   </div>
                   <div className='contactRightContainer' onClick={scrollTop}>
